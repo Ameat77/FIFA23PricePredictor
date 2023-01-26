@@ -1,0 +1,4832 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <script type="text/javascript">
+   (window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"d52dd270f3",applicationID:"295558491"};/*! For license information please see nr-loader-rum-1220.min.js.LICENSE.txt */
+!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?exports.NRBA=e():t.NRBA=e()}(self,(function(){return function(){var t,e,n={9034:function(t,e,n){"use strict";var r=n(4168);e.Z=(0,r.ky)(16)},5973:function(t,e,n){"use strict";n.d(e,{I:function(){return r}});var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1])},4280:function(t,e,n){"use strict";n.d(e,{H:function(){return o}});var r=document.createElement("div");r.innerHTML="\x3c!--[if lte IE 6]><div></div><![endif]--\x3e\x3c!--[if lte IE 7]><div></div><![endif]--\x3e\x3c!--[if lte IE 8]><div></div><![endif]--\x3e\x3c!--[if lte IE 9]><div></div><![endif]--\x3e";var o,i=r.getElementsByTagName("div").length;o=4===i?6:3===i?7:2===i?8:1===i?9:0},5955:function(t,e,n){"use strict";n.d(e,{I:function(){return r}});var r=function(t,e){var n=this;return t&&"object"==typeof t?e&&"object"==typeof e?(Object.assign(this,e),void Object.entries(t).forEach((function(t){var e=t[0],r=t[1];n[e]=r}))):console.error("setting a Configurable requires a model to set its initial properties"):console.error("setting a Configurable requires an object as input")}},441:function(t,e,n){"use strict";n.d(e,{C:function(){return c},L:function(){return u}});var r=n(1424),o=n(5955),i={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function c(t){if(!t)throw new Error("All info objects require an agent identifier!");if(!a[t])throw new Error("Info for "+t+" was never set");return a[t]}function u(t,e){if(!t)throw new Error("All info objects require an agent identifier!");a[t]=new o.I(e,i),(0,r.Qy)(t,a[t],"info")}},1476:function(t,e,n){"use strict";n.d(e,{Dg:function(){return c},Mt:function(){return u}});var r=n(1424),o=n(5955),i={privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0},metrics:{enabled:!0},page_action:{enabled:!0},page_view_event:{enabled:!0},page_view_timing:{enabled:!0},session_trace:{enabled:!0},spa:{enabled:!0}},a={};function c(t,e){if(!t)throw new Error("All configuration objects require an agent identifier!");a[t]=new o.I(e,i),(0,r.Qy)(t,a[t],"config")}function u(t,e){if(!t)throw new Error("All configuration objects require an agent identifier!");var n=function(t){if(!t)throw new Error("All configuration objects require an agent identifier!");if(!a[t])throw new Error("Configuration for "+t+" was never set");return a[t]}(t);if(n){for(var r=e.split("."),o=0;o<r.length-1;o++)if("object"!=typeof(n=n[r[o]]))return;n=n[r[r.length-1]]}return n}},2085:function(t,e,n){"use strict";n.d(e,{Y:function(){return r}});var r=(0,n(1424).mF)().o},1220:function(t,e,n){"use strict";n.d(e,{O:function(){return w},s:function(){return x}});var r={};n.r(r),n.d(r,{agent:function(){return a},match:function(){return f},version:function(){return c}});var o=n(4280),i=n(6959),a=null,c=null;if(navigator.userAgent){var u=navigator.userAgent,s=u.match(/Version\/(\S+)\s+Safari/);s&&-1===u.indexOf("Chrome")&&-1===u.indexOf("Chromium")&&(a="Safari",c=s[1])}function f(t,e){if(!a)return!1;if(t!==a)return!1;if(!e)return!0;if(!c)return!1;for(var n=c.split("."),r=e.split("."),o=0;o<r.length;o++)if(r[o]!==n[o])return!1;return!0}var d=n(5955),l=n(1424),v=n(4168),p=window.sessionStorage,h="NRBA_SESSION_ID";var g=n(1476),y=window.XMLHttpRequest,m=y&&y.prototype,b={};function w(t){if(!t)throw new Error("All runtime objects require an agent identifier!");if(!b[t])throw new Error("Runtime for "+t+" was never set");return b[t]}function x(t,e){if(!t)throw new Error("All runtime objects require an agent identifier!");var n,a;b[t]=new d.I(e,(n=t,{customTransaction:void 0,disabled:!1,features:{},maxBytes:6===o.H?2e3:3e4,offset:(0,i.yf)(),onerror:void 0,origin:""+window.location,ptid:void 0,releaseIds:{},sessionId:!0===(0,g.Mt)(n,"privacy.cookies_enabled")?(null===(a=p.getItem(h))&&(a=(0,v.ky)(16),p.setItem(h,a)),a):"0",xhrWrappable:y&&m&&m.addEventListener&&!/CriOS/.test(navigator.userAgent),userAgent:r})),(0,l.Qy)(t,b[t],"runtime")}},158:function(t,e,n){"use strict";n.d(e,{q:function(){return r}});var r=["1220","PROD"].filter((function(t){return t})).join(".")},3707:function(t,e,n){"use strict";n.d(e,{w:function(){return o}});var r={agentIdentifier:""},o=function(t){var e=this;if("object"!=typeof t)return console.error("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,r),Object.entries(t).forEach((function(t){var n=t[0],o=t[1];Object.keys(r).includes(n)&&(e.sharedContext[n]=o)}))}},1776:function(t,e,n){"use strict";n.d(e,{ee:function(){return r}});var r,o=n(1424),i=n(4217),a=n(357),c="nr@context",u=(0,o.fP)();function s(){}function f(){return new s}function d(){(r.backlog.api||r.backlog.feature)&&(r.aborted=!0,r.backlog={})}u.ee?r=u.ee:(r=function t(e,n){var o={},u={},l={},v={on:g,addEventListener:g,removeEventListener:y,emit:h,get:b,listeners:m,context:p,buffer:w,abort:d,aborted:!1,isBuffering:x,debugId:n,backlog:e&&e.backlog?e.backlog:{}};return v;function p(t){return t&&t instanceof s?t:t?(0,i.X)(t,c,f):f()}function h(t,n,o,i,a){if(!1!==a&&(a=!0),!r.aborted||i){e&&a&&e.emit(t,n,o);for(var c=p(o),s=m(t),f=s.length,d=0;d<f;d++)s[d].apply(c,n);var l=O()[u[t]];return l&&l.push([v,t,n,c]),c}}function g(t,e){o[t]=m(t).concat(e)}function y(t,e){var n=o[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return o[t]||[]}function b(e){return l[e]=l[e]||t(v,e)}function w(t,e){var n=O();v.aborted||(0,a.D)(t,(function(t,r){e=e||"feature",u[r]=e,e in n||(n[e]=[])}))}function x(t){return!!O()[u[t]]}function O(){return v.backlog}}(void 0,"globalEE"),u.ee=r)},7361:function(t,e,n){"use strict";n.d(e,{E:function(){return r},p:function(){return o}});var r=n(1776).ee.get("handle");function o(t,e,n,o,i){i?(i.buffer([t],o),i.emit(t,e,n)):(r.buffer([t],o),r.emit(t,e,n))}},3350:function(t,e,n){"use strict";n.d(e,{X:function(){return i}});var r=n(7361);i.on=a;var o=i.handlers={};function i(t,e,n,i){a(i||r.E,o,t,e,n)}function a(t,e,n,o,i){i||(i="feature"),t||(t=r.E);var a=e[i]=e[i]||{};(a[n]=a[n]||[]).push([t,o])}},4408:function(t,e,n){"use strict";n.d(e,{m:function(){return i}});var r=!1;try{var o=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,o),window.removeEventListener("testPassive",null,o)}catch(t){}function i(t){return r?{passive:!0,capture:!!t}:!!t}},4168:function(t,e,n){"use strict";function r(){var t=null,e=0,n=window.crypto||window.msCrypto;function r(){return t?15&t[e++]:16*Math.random()|0}n&&n.getRandomValues&&(t=n.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<i.length;c++)a+="x"===(o=i[c])?r().toString(16):"y"===o?(o=3&r()|8).toString(16):o;return a}function o(t){var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(e=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<t;i++)o.push(a().toString(16));return o.join("");function a(){return e?15&e[n++]:16*Math.random()|0}}n.d(e,{Rl:function(){return r},ky:function(){return o}})},6959:function(t,e,n){"use strict";n.d(e,{nb:function(){return u},os:function(){return s},yf:function(){return c},zO:function(){return a}});var r=n(2364),o=(new Date).getTime(),i=o;function a(){return r.G&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-i}function c(){return o}function u(t){i=t}function s(){return i}},2364:function(t,e,n){"use strict";n.d(e,{G:function(){return r}});var r=void 0!==window.performance&&window.performance.timing&&void 0!==window.performance.timing.navigationStart},1793:function(t,e,n){"use strict";function r(t){var e,n=0;for(e=0;e<t.length;e++)n+=(e+1)*t.charCodeAt(e);return Math.abs(n)}n.d(e,{v:function(){return s},s:function(){return u}});var o=n(6972),i=n(5973),a=n(6959),c=n(2364),u=!0;function s(t){var e=function(){if(i.I&&i.I<9)return;if(c.G)return u=!1,window.performance.timing.navigationStart}()||function(){for(var t=document.cookie.split(" "),e=0;e<t.length;e++)if(0===t[e].indexOf("NREUM=")){for(var n,o,i,a,c=t[e].substring("NREUM=".length).split("&"),u=0;u<c.length;u++)0===c[u].indexOf("s=")?i=c[u].substring(2):0===c[u].indexOf("p=")?";"===(o=c[u].substring(2)).charAt(o.length-1)&&(o=o.substr(0,o.length-1)):0===c[u].indexOf("r=")&&";"===(n=c[u].substring(2)).charAt(n.length-1)&&(n=n.substr(0,n.length-1));if(n){var s=r(document.referrer);(a=s==n)||(a=r(document.location.href)==n&&s==o)}if(a&&i){if((new Date).getTime()-i>6e4)return;return i}}}();e&&((0,o.B)(t,"starttime",e),(0,a.nb)(e))}},6972:function(t,e,n){"use strict";n.d(e,{B:function(){return i},L:function(){return a}});var r=n(6959),o={};function i(t,e,n){void 0===n&&(n=(0,r.zO)()+(0,r.os)()),o[t]=o[t]||{},o[t][e]=n}function a(t,e,n,r){var i,a,c=t.sharedContext.agentIdentifier,u=null==(i=o[c])?void 0:i[n],s=null==(a=o[c])?void 0:a[r];void 0!==u&&void 0!==s&&t.store("measures",e,{value:s-u})}},7299:function(t,e,n){"use strict";n.d(e,{T:function(){return a}});var r=window,o=r;function i(){return o}var a={isFileProtocol:function(){var t=i(),e=!(!t.location||!t.location.protocol||"file:"!==t.location.protocol);e&&(a.supportabilityMetricSent=!0);return e},supportabilityMetricSent:!1}},847:function(t,e,n){"use strict";n.d(e,{K:function(){return a}});var r=n(1220),o=n(1476),i=["ajax","jserrors","metrics","page_action","page_view_event","page_view_timing","session_trace","spa"];function a(t){var e={};return i.forEach((function(n){e[n]=function(t,e){return!0!==(0,r.O)(e).disabled&&!1!==(0,o.Mt)(e,t+".enabled")}(n,t)})),e}},5023:function(t,e,n){"use strict";n.d(e,{W:function(){return o}});var r=n(1776),o=function(t,e,n){void 0===n&&(n=[]),this.agentIdentifier=t,this.aggregator=e,this.ee=r.ee.get(t),this.externalFeatures=n}},4217:function(t,e,n){"use strict";n.d(e,{X:function(){return o}});var r=Object.prototype.hasOwnProperty;function o(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(t){}return t[e]=o,o}},357:function(t,e,n){"use strict";n.d(e,{D:function(){return o}});var r=Object.prototype.hasOwnProperty;function o(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}},603:function(t,e,n){"use strict";n.d(e,{$c:function(){return s},Ng:function(){return f},RR:function(){return u}});var r=n(1476),o=n(3707),i=n(7299);function a(t,e){return a=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},a(t,e)}var c={regex:/^file:\/\/(.*)/,replacement:"file://OBFUSCATED"},u=function(t){var e,n;function r(e){return t.call(this,e)||this}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,a(e,n);var o=r.prototype;return o.shouldObfuscate=function(){return s(this.sharedContext.agentIdentifier).length>0},o.obfuscateString=function(t){if(!t||"string"!=typeof t)return t;for(var e=s(this.sharedContext.agentIdentifier),n=t,r=0;r<e.length;r++){var o=e[r].regex,i=e[r].replacement||"*";n=n.replace(o,i)}return n},r}(o.w);function s(t){var e=[],n=(0,r.Mt)(t,"obfuscate")||[];return e=e.concat(n),i.T.isFileProtocol()&&e.push(c),e}function f(t){for(var e=!1,n=!1,r=0;r<t.length;r++){"regex"in t[r]?"string"!=typeof t[r].regex&&t[r].regex.constructor!==RegExp&&(console&&console.warn&&console.warn('An obfuscation replacement rule contains a "regex" value with an invalid type (must be a string or RegExp)'),n=!0):(console&&console.warn&&console.warn('An obfuscation replacement rule was detected missing a "regex" value.'),n=!0);var o=t[r].replacement;o&&"string"!=typeof o&&(console&&console.warn&&console.warn('An obfuscation replacement rule contains a "replacement" value with an invalid type (must be a string)'),e=!0)}return!e&&!n}},1424:function(t,e,n){"use strict";n.d(e,{EZ:function(){return u},Qy:function(){return c},ce:function(){return o},fP:function(){return i},gG:function(){return s},mF:function(){return a}});var r=n(6959),o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function i(){return window.NREUM||(window.NREUM={}),void 0===window.newrelic&&(window.newrelic=window.NREUM),window.NREUM}function a(){var t=i();if(!t.o){var e=window,n=e.XMLHttpRequest;t.o={ST:setTimeout,SI:e.setImmediate,CT:clearTimeout,XHR:n,REQ:e.Request,EV:e.Event,PR:e.Promise,MO:e.MutationObserver,FETCH:e.fetch}}return t}function c(t,e,n){var o,a,c=i(),u=c.initializedAgents||{},s=u[t]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.zO)(),date:new Date}),c.initializedAgents=Object.assign({},u,((a={})[t]=Object.assign({},s,((o={})[n]=e,o)),a)),c}function u(t,e){i()[t]=e}function s(){var t,e;return t=i(),e=t.info||{},t.info=Object.assign({beacon:o.beacon,errorBeacon:o.errorBeacon},e),function(){var t=i(),e=t.init||{};t.init=Object.assign({},e)}(),a(),function(){var t=i(),e=t.loader_config||{};t.loader_config=Object.assign({},e)}(),i()}},8539:function(t){t.exports=function(t,e,n){e||(e=0),void 0===n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}}},r={};function o(t){var e=r[t];if(void 0!==e)return e.exports;var i=r[t]={exports:{}};return n[t](i,i.exports,o),i.exports}o.m=n,o.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return o.d(e,{a:e}),e},o.d=function(t,e){for(var n in e)o.o(e,n)&&!o.o(t,n)&&Object.defineProperty(t,n,{enumerable:!0,get:e[n]})},o.f={},o.e=function(t){return Promise.all(Object.keys(o.f).reduce((function(e,n){return o.f[n](t,e),e}),[]))},o.u=function(t){return t+"."+o.h().slice(0,8)+"-1220.js"},o.h=function(){return"2d6a2503b7f18a5b77dd"},o.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},t={},e="NRBA:",o.l=function(n,r,i,a){if(t[n])t[n].push(r);else{var c,u;if(void 0!==i)for(var s=document.getElementsByTagName("script"),f=0;f<s.length;f++){var d=s[f];if(d.getAttribute("src")==n||d.getAttribute("data-webpack")==e+i){c=d;break}}c||(u=!0,(c=document.createElement("script")).charset="utf-8",c.timeout=120,o.nc&&c.setAttribute("nonce",o.nc),c.setAttribute("data-webpack",e+i),c.src=n),t[n]=[r];var l=function(e,r){c.onerror=c.onload=null,clearTimeout(v);var o=t[n];if(delete t[n],c.parentNode&&c.parentNode.removeChild(c),o&&o.forEach((function(t){return t(r)})),e)return e(r)},v=setTimeout(l.bind(null,void 0,{type:"timeout",target:c}),12e4);c.onerror=l.bind(null,c.onerror),c.onload=l.bind(null,c.onload),u&&document.head.appendChild(c)}},o.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},o.p="https://js-agent.newrelic.com/",function(){var t={299:0,82:0};o.f.j=function(e,n){var r=o.o(t,e)?t[e]:void 0;if(0!==r)if(r)n.push(r[2]);else{var i=new Promise((function(n,o){r=t[e]=[n,o]}));n.push(r[2]=i);var a=o.p+o.u(e),c=new Error;o.l(a,(function(n){if(o.o(t,e)&&(0!==(r=t[e])&&(t[e]=void 0),r)){var i=n&&("load"===n.type?"missing":n.type),a=n&&n.target&&n.target.src;c.message="Loading chunk "+e+" failed.\n("+i+": "+a+")",c.name="ChunkLoadError",c.type=i,c.request=a,r[1](c)}}),"chunk-"+e,e)}};var e=function(e,n){var r,i,a=n[0],c=n[1],u=n[2],s=0;if(a.some((function(e){return 0!==t[e]}))){for(r in c)o.o(c,r)&&(o.m[r]=c[r]);if(u)u(o)}for(e&&e(n);s<a.length;s++)i=a[s],o.o(t,i)&&t[i]&&t[i][0](),t[i]=0},n=self.webpackChunkNRBA=self.webpackChunkNRBA||[];n.forEach(e.bind(null,0)),n.push=e.bind(null,n.push.bind(n))}();var i={};return function(){"use strict";o.r(i);var t=o(9034),e=o(4408),n=window,r=n.document;function a(t){"complete"===r.readyState&&t()}function c(t){a(t),r.addEventListener?n.addEventListener("load",t,(0,e.m)(!1)):n.attachEvent("onload",t)}function u(t){a(t),r.addEventListener?r.addEventListener("DOMContentLoaded",t,(0,e.m)(!1)):r.attachEvent("onreadystatechange",a)}var s=o(1776);function f(){f=function(){return t};var t={},e=Object.prototype,n=e.hasOwnProperty,r="function"==typeof Symbol?Symbol:{},o=r.iterator||"@@iterator",i=r.asyncIterator||"@@asyncIterator",a=r.toStringTag||"@@toStringTag";function c(t,e,n){return Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}),t[e]}try{c({},"")}catch(t){c=function(t,e,n){return t[e]=n}}function u(t,e,n,r){var o=e&&e.prototype instanceof l?e:l,i=Object.create(o.prototype),a=new j(r||[]);return i._invoke=function(t,e,n){var r="suspendedStart";return function(o,i){if("executing"===r)throw new Error("Generator is already running");if("completed"===r){if("throw"===o)throw i;return P()}for(n.method=o,n.arg=i;;){var a=n.delegate;if(a){var c=x(a,n);if(c){if(c===d)continue;return c}}if("next"===n.method)n.sent=n._sent=n.arg;else if("throw"===n.method){if("suspendedStart"===r)throw r="completed",n.arg;n.dispatchException(n.arg)}else"return"===n.method&&n.abrupt("return",n.arg);r="executing";var u=s(t,e,n);if("normal"===u.type){if(r=n.done?"completed":"suspendedYield",u.arg===d)continue;return{value:u.arg,done:n.done}}"throw"===u.type&&(r="completed",n.method="throw",n.arg=u.arg)}}}(t,n,a),i}function s(t,e,n){try{return{type:"normal",arg:t.call(e,n)}}catch(t){return{type:"throw",arg:t}}}t.wrap=u;var d={};function l(){}function v(){}function p(){}var h={};c(h,o,(function(){return this}));var g=Object.getPrototypeOf,y=g&&g(g(_([])));y&&y!==e&&n.call(y,o)&&(h=y);var m=p.prototype=l.prototype=Object.create(h);function b(t){["next","throw","return"].forEach((function(e){c(t,e,(function(t){return this._invoke(e,t)}))}))}function w(t,e){function r(o,i,a,c){var u=s(t[o],t,i);if("throw"!==u.type){var f=u.arg,d=f.value;return d&&"object"==typeof d&&n.call(d,"__await")?e.resolve(d.__await).then((function(t){r("next",t,a,c)}),(function(t){r("throw",t,a,c)})):e.resolve(d).then((function(t){f.value=t,a(f)}),(function(t){return r("throw",t,a,c)}))}c(u.arg)}var o;this._invoke=function(t,n){function i(){return new e((function(e,o){r(t,n,e,o)}))}return o=o?o.then(i,i):i()}}function x(t,e){var n=t.iterator[e.method];if(void 0===n){if(e.delegate=null,"throw"===e.method){if(t.iterator.return&&(e.method="return",e.arg=void 0,x(t,e),"throw"===e.method))return d;e.method="throw",e.arg=new TypeError("The iterator does not provide a 'throw' method")}return d}var r=s(n,t.iterator,e.arg);if("throw"===r.type)return e.method="throw",e.arg=r.arg,e.delegate=null,d;var o=r.arg;return o?o.done?(e[t.resultName]=o.value,e.next=t.nextLoc,"return"!==e.method&&(e.method="next",e.arg=void 0),e.delegate=null,d):o:(e.method="throw",e.arg=new TypeError("iterator result is not an object"),e.delegate=null,d)}function O(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function E(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function j(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(O,this),this.reset(!0)}function _(t){if(t){var e=t[o];if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var r=-1,i=function e(){for(;++r<t.length;)if(n.call(t,r))return e.value=t[r],e.done=!1,e;return e.value=void 0,e.done=!0,e};return i.next=i}}return{next:P}}function P(){return{value:void 0,done:!0}}return v.prototype=p,c(m,"constructor",p),c(p,"constructor",v),v.displayName=c(p,a,"GeneratorFunction"),t.isGeneratorFunction=function(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===v||"GeneratorFunction"===(e.displayName||e.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,p):(t.__proto__=p,c(t,a,"GeneratorFunction")),t.prototype=Object.create(m),t},t.awrap=function(t){return{__await:t}},b(w.prototype),c(w.prototype,i,(function(){return this})),t.AsyncIterator=w,t.async=function(e,n,r,o,i){void 0===i&&(i=Promise);var a=new w(u(e,n,r,o),i);return t.isGeneratorFunction(n)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},b(m),c(m,a,"Generator"),c(m,o,(function(){return this})),c(m,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var e=[];for(var n in t)e.push(n);return e.reverse(),function n(){for(;e.length;){var r=e.pop();if(r in t)return n.value=r,n.done=!1,n}return n.done=!0,n}},t.values=_,j.prototype={constructor:j,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(E),!t)for(var e in this)"t"===e.charAt(0)&&n.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var e=this;function r(n,r){return a.type="throw",a.arg=t,e.next=n,r&&(e.method="next",e.arg=void 0),!!r}for(var o=this.tryEntries.length-1;o>=0;--o){var i=this.tryEntries[o],a=i.completion;if("root"===i.tryLoc)return r("end");if(i.tryLoc<=this.prev){var c=n.call(i,"catchLoc"),u=n.call(i,"finallyLoc");if(c&&u){if(this.prev<i.catchLoc)return r(i.catchLoc,!0);if(this.prev<i.finallyLoc)return r(i.finallyLoc)}else if(c){if(this.prev<i.catchLoc)return r(i.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return r(i.finallyLoc)}}}},abrupt:function(t,e){for(var r=this.tryEntries.length-1;r>=0;--r){var o=this.tryEntries[r];if(o.tryLoc<=this.prev&&n.call(o,"finallyLoc")&&this.prev<o.finallyLoc){var i=o;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=e&&e<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=t,a.arg=e,i?(this.method="next",this.next=i.finallyLoc,d):this.complete(a)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),d},finish:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.finallyLoc===t)return this.complete(n.completion,n.afterLoc),E(n),d}},catch:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.tryLoc===t){var r=n.completion;if("throw"===r.type){var o=r.arg;E(n)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,e,n){return this.delegate={iterator:_(t),resultName:e,nextLoc:n},"next"===this.method&&(this.arg=void 0),d}},t}function d(t,e,n,r,o,i,a){try{var c=t[i](a),u=c.value}catch(t){return void n(t)}c.done?e(u):Promise.resolve(u).then(r,o)}var l=0;function v(t){var e;(e=f().mark((function e(){var n,r;return f().wrap((function(e){for(;;)switch(e.prev=e.next){case 0:if(!l++){e.next=2;break}return e.abrupt("return");case 2:return e.prev=2,e.next=5,o.e(552).then(o.bind(o,5552));case 5:return n=e.sent,r=n.aggregator,e.next=9,r(t);case 9:e.next=15;break;case 11:e.prev=11,e.t0=e.catch(2),console.error("Failed to successfully load all aggregators. Aborting...\n",e.t0),s.ee.abort();case 15:case"end":return e.stop()}}),e,null,[[2,11]])})),function(){var t=this,n=arguments;return new Promise((function(r,o){var i=e.apply(t,n);function a(t){d(i,r,o,a,c,"next",t)}function c(t){d(i,r,o,a,c,"throw",t)}a(void 0)}))})()}var p=o(8539),h=o.n(p),g=o(1424),y=o(1220),m=o(441),b=o(7361),w=o(357),x=o(6959);var O=o(1476),E=o(5955),j={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},_={};var P=!1;var A=o(6972),k=o(1793),L=o(5023);function S(t,e){return S=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},S(t,e)}var T,C,I,R=function(t){var e,n;function r(e){var n;return n=t.call(this,e)||this,(0,k.v)(e),(0,A.B)(e,"firstbyte",(0,x.yf)()),c((function(){return n.measureWindowLoaded()})),u((function(){return n.measureDomContentLoaded()})),n}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,S(e,n);var o=r.prototype;return o.measureWindowLoaded=function(){var t=(0,x.zO)();(0,A.B)(this.agentIdentifier,"onload",t+(0,x.os)()),(0,b.p)("timing",["load",t],void 0,void 0,this.ee)},o.measureDomContentLoaded=function(){(0,A.B)(this.agentIdentifier,"domContent",(0,x.zO)()+(0,x.os)())},r}(L.W);void 0!==document.hidden?(T="hidden",C="visibilitychange",I="visibilityState"):void 0!==document.msHidden?(T="msHidden",C="msvisibilitychange"):void 0!==document.webkitHidden&&(T="webkitHidden",C="webkitvisibilitychange",I="webkitVisibilityState");var M=o(2085);function N(t,e){return N=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},N(t,e)}var D=function(t){var n,r;function o(n){var r,o;if((r=t.call(this,n)||this).pageHiddenTime="hidden"===document.visibilityState?-1:1/0,r.performanceObserver,r.lcpPerformanceObserver,r.clsPerformanceObserver,r.fiRecorded=!1,!r.isEnabled())return function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(r);if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){r.performanceObserver=new PerformanceObserver((function(){var t;return(t=r).perfObserver.apply(t,arguments)}));try{r.performanceObserver.observe({entryTypes:["paint"]})}catch(t){}r.lcpPerformanceObserver=new PerformanceObserver((function(){var t;return(t=r).lcpObserver.apply(t,arguments)}));try{r.lcpPerformanceObserver.observe({entryTypes:["largest-contentful-paint"]})}catch(t){}r.clsPerformanceObserver=new PerformanceObserver((function(){var t;return(t=r).clsObserver.apply(t,arguments)}));try{r.clsPerformanceObserver.observe({type:"layout-shift",buffered:!0})}catch(t){}}if("addEventListener"in document){r.fiRecorded=!1;["click","keydown","mousedown","pointerdown","touchstart"].forEach((function(t){document.addEventListener(t,(function(){var t;return(t=r).captureInteraction.apply(t,arguments)}),(0,e.m)(!1))}))}return o=function(){var t;return(t=r).captureVisibilityChange.apply(t,arguments)},"addEventListener"in document&&C&&document.addEventListener(C,(function(){I&&document[I]?o(document[I]):document[T]?o("hidden"):o("visible")}),(0,e.m)(!1)),r}r=t,(n=o).prototype=Object.create(r.prototype),n.prototype.constructor=n,N(n,r);var i=o.prototype;return i.isEnabled=function(){return!1!==(0,O.Mt)(this.agentIdentifier,"page_view_timing.enabled")},i.perfObserver=function(t,e){var n=this;t.getEntries().forEach((function(t){"first-paint"===t.name?(0,b.p)("timing",["fp",Math.floor(t.startTime)],void 0,void 0,n.ee):"first-contentful-paint"===t.name&&(0,b.p)("timing",["fcp",Math.floor(t.startTime)],void 0,void 0,n.ee)}))},i.lcpObserver=function(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(this.pageHiddenTime<r.startTime)return;var o=[r],i=this.addConnectionAttributes({});i&&o.push(i),(0,b.p)("lcp",o,void 0,void 0,this.ee)}},i.clsObserver=function(t){var e=this;t.getEntries().forEach((function(t){t.hadRecentInput||(0,b.p)("cls",[t],void 0,void 0,e.ee)}))},i.addConnectionAttributes=function(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t},i.captureInteraction=function(t){if(t instanceof M.Y.EV&&!this.fiRecorded){var e=Math.round(t.timeStamp),n={type:t.type};this.addConnectionAttributes(n),e<=(0,x.zO)()?n.fid=(0,x.zO)()-e:e>(0,x.os)()&&e<=Date.now()?(e-=(0,x.os)(),n.fid=(0,x.zO)()-e):e=(0,x.zO)(),this.fiRecorded=!0,(0,b.p)("timing",["fi",e,n],void 0,void 0,this.ee)}},i.captureVisibilityChange=function(t){"hidden"===t&&(this.pageHiddenTime=(0,x.zO)(),(0,b.p)("pageHide",[this.pageHiddenTime],void 0,void 0,this.ee))},o}(L.W),q=o(3350),B="React",z="Angular",G="AngularJS",H="Backbone",F="Ember",V="Vue",Z="Meteor",U="Zepto",X="Jquery";function Q(){var t=[];try{(function(){try{if(window.React||window.ReactDOM||window.ReactRedux)return!0;if(document.querySelector("[data-reactroot], [data-reactid]"))return!0;for(var t=document.querySelectorAll("body > div"),e=0;e<t.length;e++)if(Object.keys(t[e]).indexOf("_reactRootContainer")>=0)return!0;return!1}catch(t){return!1}})()&&t.push(B),function(){try{return!!window.angular||(!!document.querySelector(".ng-binding, [ng-app], [data-ng-app], [ng-controller], [data-ng-controller], [ng-repeat], [data-ng-repeat]")||!!document.querySelector('script[src*="angular.js"], script[src*="angular.min.js"]'))}catch(t){return!1}}()&&t.push(G),function(){try{return!!(window.hasOwnProperty("ng")&&window.ng.hasOwnProperty("coreTokens")&&window.ng.coreTokens.hasOwnProperty("NgZone"))||!!document.querySelectorAll("[ng-version]").length}catch(t){return!1}}()&&t.push(z),window.Backbone&&t.push(H),window.Ember&&t.push(F),window.Vue&&t.push(V),window.Meteor&&t.push(Z),window.Zepto&&t.push(U),window.jQuery&&t.push(X)}catch(t){}return t}var W=o(7299),K=o(603),Y=o(158);function J(t,e){return J=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},J(t,e)}var $=function(t){var e,n;function r(e){var n;return(n=t.call(this,e)||this).singleChecks(),(0,q.X)("record-supportability",(function(){var t;return(t=n).recordSupportability.apply(t,arguments)}),void 0,n.ee),(0,q.X)("record-custom",(function(){var t;return(t=n).recordCustom.apply(t,arguments)}),void 0,n.ee),n}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,J(e,n);var o=r.prototype;return o.recordSupportability=function(t,e){var n=["sm",t,{name:t},e];return(0,b.p)("storeMetric",n,null,void 0,this.ee),n},o.recordCustom=function(t,e){var n=["cm",t,{name:t},e];return(0,b.p)("storeEventMetrics",n,null,void 0,this.ee),n},o.singleChecks=function(){var t=this;this.recordSupportability("Generic/Version/"+Y.q+"/Detected"),u((function(){Q().forEach((function(e){t.recordSupportability("Framework/"+e+"/Detected")}))})),W.T.isFileProtocol()&&(this.recordSupportability("Generic/FileProtocol/Detected"),W.T.supportabilityMetricSent=!0);var e=(0,K.$c)(this.agentIdentifier);e.length>0&&this.recordSupportability("Generic/Obfuscate/Detected"),e.length>0&&!(0,K.Ng)(e)&&this.recordSupportability("Generic/Obfuscate/Invalid")},r}(L.W),tt=o(847);new Promise((function(e,n){if(P)e(P);else{var r=(0,g.gG)();try{(0,m.L)(t.Z,r.info),(0,O.Dg)(t.Z,r.init),function(t,e){if(!t)throw new Error("All loader-config objects require an agent identifier!");_[t]=new E.I(e,j),(0,g.Qy)(t,_[t],"loader_config")}(t.Z,r.loader_config),(0,y.s)(t.Z,{}),function(t){var e=(0,g.fP)(),n=s.ee.get(t),r=n.get("tracer"),o="api-",i="api-ixn-";function a(){}(0,w.D)(["setErrorHandler","finished","addToTrace","inlineHit","addRelease"],(function(t,n){e[n]=u(o,n,!0,"api")})),e.addPageAction=u(o,"addPageAction",!0),e.setCurrentRouteName=u(o,"routeName",!0),e.setPageViewName=function(e,n){if("string"==typeof e)return"/"!==e.charAt(0)&&(e="/"+e),(0,y.O)(t).customTransaction=(n||"http://custom.transaction")+e,u(o,"setPageViewName",!0,"api")()},e.setCustomAttribute=function(e,n){var r,i=(0,m.C)(t);return(0,m.L)(t,Object.assign({},i,{jsAttributes:Object.assign({},i.jsAttributes,(r={},r[e]=n,r))})),u(o,"setCustomAttribute",!0,"api")()},e.interaction=function(){return(new a).get()};var c=a.prototype={createTracer:function(t,e){var o={},i=this,a="function"==typeof e;return(0,b.p)("api-ixn-tracer",[(0,x.zO)(),t,o],i,void 0,n),function(){if(r.emit((a?"":"no-")+"fn-start",[(0,x.zO)(),i,a],o),a)try{return e.apply(this,arguments)}catch(t){throw r.emit("fn-err",[arguments,this,"string"==typeof t?new Error(t):t],o),t}finally{r.emit("fn-end",[(0,x.zO)()],o)}}}};function u(t,e,r,o){return function(){return(0,b.p)("record-supportability",["API/"+e+"/called"],void 0,void 0,n),(0,b.p)(t+e,[(0,x.zO)()].concat(h()(arguments)),r?null:this,o,n),r?void 0:this}}(0,w.D)("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),(function(t,e){c[e]=u(i,e)})),e.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),(0,b.p)("record-supportability",["API/noticeError/called"],void 0,void 0,n),(0,b.p)("err",[t,(0,x.zO)(),!1,e],void 0,void 0,n)}}(t.Z),e(P=!0)}catch(t){n(t)}}})).then((function(){var e,n,r,o=(0,tt.K)(t.Z);o.page_view_event&&new R(t.Z),o.page_view_timing&&new D(t.Z),o.metrics&&new $(t.Z),e="lite",n?setTimeout((function(){return v(e)}),r||1e3):c((function(){return v(e)}))}))}(),i}()}));
+  </script>
+  <title>
+   Lionel Messi FIFA 23 Champions League Live  - 94 Rated - Prices and In Game Stats - FUTWIZ
+  </title>
+  <link href="https://tags.bkrtx.com/" rel="preconnect"/>
+  <link crossorigin="" href="https://securepubads.g.doubleclick.net/" rel="preconnect"/>
+  <link crossorigin="" href="https://cdn.consentmanager.mgr.consensu.org/" rel="preconnect"/>
+  <meta content="width=device-width" name="viewport"/>
+  <meta content="Lionel Messi FIFA 23 Champions League Live 94 Rated in game stats, player review and comments on FUTWIZ" name="description"/>
+  <link href="https://www.futwiz.com/en/fifa23/player/lionel-messi/17392" rel="canonical">
+   <style>
+    body {
+            --cmpBgColor: #333;
+            --cmpTextColor: #999;
+            --cmpLinkColor: #fff;
+            --cmpPurposesColor: #fff;
+            --cmpBrandColor: #8bbe0b;
+            --cmpLogo: url('https://www.futwiz.com/assets/img/site/logo.png');
+        }
+        #nn_mobile_lb_top { height:50px; }
+        @media only screen and (max-width: 990px) {
+            .nntestslot {
+                min-width: 300px ;
+                min-height: 250px ;
+            }
+        }
+        #nn_primis_player {
+            width:683px;
+            margin:auto;
+        }
+        @media(max-width:850px) {
+            header .col-10 {
+                flex:0 0 100%;max-width:100%;
+            }
+            #nn_primis_player {
+                max-width:300px;
+                margin:auto;
+            }
+        }
+   </style>
+   <script>
+    window.collapseEmptyDivs = false;
+   </script>
+   <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-54KXCCF');
+   </script>
+   <script>
+    window.AdSlots = window.AdSlots || {cmd: [], disableScripts: ['gpt','bk']};
+   </script>
+   <script async="" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js">
+   </script>
+   <script async="" site="futwiz" src="https://kumo.network-n.com/dist/app.js">
+   </script>
+   <script src="/assets/js/modernizr.js">
+   </script>
+   <link crossorigin="anonymous" href="/assets/css/bootstrap.min.css" rel="stylesheet"/>
+   <link href="/assets/css/global.css?r=151" rel="stylesheet" type="text/css"/>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+    <link href="/assets/fa/css/all.css?v3" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700&amp;display=swap" rel="stylesheet"/>
+    <link href="/favicon.ico" rel="shortcut icon"/>
+    <script src="/assets/js/jquery.js">
+    </script>
+    <script src="/assets/js/futwiz.js">
+    </script>
+   </link>
+  </link>
+ </head>
+ <body class="player">
+  <noscript>
+   <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-54KXCCF" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <div class="ad" id="nn_skinl">
+  </div>
+  <div class="ad" id="nn_skinr">
+  </div>
+  <nav id="menu" style="display:none;">
+   <ul>
+    <li>
+     <a href="/en/login?return=/en/fifa23/player/lionel-messi/17392" rel="nofollow">
+      Login or Sign Up
+     </a>
+    </li>
+    <li>
+     <a href="https://forms.gle/zKz48AXWiVc12CUs7" target="_BLANK">
+      Feedback &amp; Suggestions
+     </a>
+    </li>
+    <li class="sub">
+     <a href="Javascript:;">
+      Players
+      <i class="fa fa-chevron-right">
+      </i>
+     </a>
+     <ul class="menu">
+      <li>
+       <a href="/en/fifa23/players">
+        <b>
+         FIFA 23 Players
+        </b>
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa23/players/latest">
+        <b>
+         FIFA 23
+        </b>
+        Latest Players
+       </a>
+      </li>
+      <li>
+       <a href="/en/otw-tracker">
+        OTW Tracker
+       </a>
+      </li>
+      <li>
+       <a href="/en/perfect-trios?league=13">
+        <b>
+         FIFA 23
+        </b>
+        Trios
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa23/changes">
+        <b>
+         FIFA 23
+        </b>
+        Up/Downgrades
+       </a>
+      </li>
+      <li>
+       <a href="/en/popular">
+        FIFA 23 Popular Players
+       </a>
+      </li>
+      <li>
+       <a href="/en/lowest-price-ratings">
+        FIFA 23 Lowest Prices
+       </a>
+      </li>
+      <li>
+       <a href="/en/priceranges/console">
+        FIFA 23 Price Range Changes
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa23/clubs">
+        FIFA 23 Clubs
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa23/leagues">
+        FIFA 23 Leagues
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa23/nations">
+        FIFA 23 Nations
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa23/custom-player">
+        Card Creator
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa23/predictions">
+        FIFA 23 Predictions
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <a href="/en/fifa23/players/latest">
+      <b>
+       FIFA 23
+      </b>
+      Latest Players
+     </a>
+    </li>
+    <li class="sub">
+     <a href="Javascript:;">
+      Builder
+      <i class="fa fa-chevron-right">
+      </i>
+     </a>
+     <ul class="menu">
+      <li>
+       <a href="/en/fifa23/squad-builder">
+        <b>
+         FIFA 23
+        </b>
+        Squad Builder
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa22/squad-builder">
+        FIFA 22 Squad Builder
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa21/squad-builder">
+        FIFA 21 Squad Builder
+       </a>
+      </li>
+      <li>
+       <a href="/en/squad-importer">
+        Squad Importer
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa19/squad-builder">
+        FIFA 19 Squad Builder
+       </a>
+      </li>
+      <li>
+       <a href="/en/custom-builder">
+        Custom Squad Builder
+       </a>
+      </li>
+      <li>
+       <a href="/en/squad-builder/generations">
+        Generations Squad Builder
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <a href="/en/daily-content">
+      Daily FUT Content
+     </a>
+    </li>
+    <li class="sub">
+     <a href="Javascript:;">
+      Career Mode
+      <i class="fa fa-chevron-right">
+      </i>
+     </a>
+     <ul class="menu">
+      <li>
+       <a href="/en/fifa22/career-mode/players">
+        FIFA 23 Career Mode Players
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa23/career-mode/players?order=growth&amp;s=desc">
+        Highest Growth
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa22/career-mode/players">
+        FIFA 22 Career Mode Players
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa22/career-mode/teams">
+        FIFA 22 Career Mode Teams
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa21/career-mode/players">
+        FIFA 21 Career Mode Players
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <a href="/en/fifa23/custom-player">
+      Card Generator
+     </a>
+    </li>
+    <li>
+     <a href="/en/fifa23/squad-building-challenges">
+      <img alt="Squad Building Challenges" src="/assets/img/site/nav/SBC.png"/>
+      SBC
+     </a>
+    </li>
+    <li class="sub">
+     <a href="Javascript:;">
+      Market
+      <i class="fa fa-chevron-right">
+      </i>
+     </a>
+     <ul class="menu">
+      <li>
+       <a href="/en/market/overall/console/live">
+        Overall Market
+       </a>
+      </li>
+      <li>
+       <a href="/en/market/baseicons/console/live">
+        Base Icons
+       </a>
+      </li>
+      <li>
+       <a href="/en/market/midicons/console/live">
+        Mid Icons
+       </a>
+      </li>
+      <li>
+       <a href="/en/market/89rated/console/live">
+        89 Rated
+       </a>
+      </li>
+      <li>
+       <a href="/en/market/88rated/console/live">
+        88 Rated
+       </a>
+      </li>
+      <li>
+       <a href="/en/market/87rated/console/live">
+        87 Rated
+       </a>
+      </li>
+      <li>
+       <a href="/en/market/86rated/console/live">
+        86 Rated
+       </a>
+      </li>
+      <li>
+       <a href="/en/market/85rated/console/live">
+        85 Rated
+       </a>
+      </li>
+      <li>
+       <a href="/en/market/84rated/console/live">
+        84 Rated
+       </a>
+      </li>
+      <li>
+       <a href="/en/market/83rated/console/live">
+        83 Rated
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa21/market/overall/playstation/live">
+        FIFA 21 Market
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <a href="/en/seasonobjectives">
+      Objectives
+     </a>
+    </li>
+    <li class="sub">
+     <a href="Javascript:;">
+      Trading
+      <i class="fa fa-chevron-right">
+      </i>
+     </a>
+     <ul class="menu">
+      <li>
+       <a href="/en/lists">
+        Investment Lists
+       </a>
+      </li>
+      <li>
+       <a href="/en/consumables">
+        Consumable Prices
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <a href="/en/fifa23/fut-draft">
+      FUT Draft
+     </a>
+    </li>
+    <li class="sub">
+     <a href="Javascript:;">
+      Packs
+      <i class="fa fa-chevron-right">
+      </i>
+     </a>
+     <ul class="menu">
+      <li>
+       <a href="/en/pack-opener">
+        Pack Opener
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa22/packs/leaderboard/daily">
+        Leaderboards
+       </a>
+      </li>
+      <li>
+       <a href="/en/club/fifa22/all/all/off">
+        FUTWIZ Club
+       </a>
+      </li>
+      <li>
+       <a href="/en/spinner">
+        Spinner
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <a href="/en/division-rivals/leaderboards/all/fifa23-season-1">
+      Division Rivals Leaderboards
+     </a>
+    </li>
+    <li>
+     <a href="/en/fut-champions">
+      <img alt="FUT Champions" src="/assets/img/site/nav/champs.png"/>
+      FUT Champions
+     </a>
+    </li>
+    <li class="sub">
+     <a href="Javascript:;">
+      FIFA 22
+      <i class="fa fa-chevron-right">
+      </i>
+     </a>
+     <ul class="menu">
+      <li>
+       <a href="/en/fifa22/players">
+        FIFA 22 Players
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa22/players/latest">
+        FIFA 22 Latest Players
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa22/squad-builder">
+        FIFA 22 Squad Builder
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa22/custom-player">
+        FIFA 22 Card Creator
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa22/squad-building-challenges">
+        FIFA 22 SBCs
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li class="sub">
+     <a href="Javascript:;">
+      Generations
+      <i class="fa fa-chevron-right">
+      </i>
+     </a>
+     <ul class="menu">
+      <li>
+       <a href="/en/fifa22/players">
+        FIFA 22 Players
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa21/players">
+        FIFA 21 Players
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa20/players">
+        FIFA 20 Players
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa19/players">
+        FIFA 19 Players
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa18/players">
+        FIFA 18 Players
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa18/worldcup/players">
+        World Cup Players
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa17/players">
+        FIFA 17 Players
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa16/players">
+        FIFA 16 Players
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa15/players">
+        FIFA 15 Players
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa14/players">
+        FIFA 14 Players
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa13/players">
+        FIFA 13 Players
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa12/players">
+        FIFA 12 Players
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa11/players">
+        FIFA 11 Players
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa10/players">
+        FIFA 10 Players
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <a class="showdesktop" href="Javascript:;">
+      Desktop Version
+     </a>
+    </li>
+    <li>
+     <a href="Javascript:;" onclick="slideout.toggle();">
+      Close Menu
+     </a>
+    </li>
+   </ul>
+  </nav>
+  <script>
+   $( ".sub" ).click(function() {
+                $(this).find('.menu').slideToggle();
+            });
+  </script>
+  <style>
+   header .col-10 {
+            flex:0 0 87%;max-width:87%;
+        }
+        @media(max-width:850px) {
+            header .col-10 {
+                flex:0 0 100%;max-width:100%;
+            }
+        }
+  </style>
+  <header class="celtra-reveal-header-sticky">
+   <div class="wrap">
+    <img alt="Design" class="leftOverlay" src="/assets/img/site/nav/leftOverlay.png"/>
+    <a href="/en">
+     <img alt="FUTWIZ" class="logo" src="/assets/img/site/logo.png"/>
+    </a>
+    <div class="row">
+     <div class="col-10">
+      <nav>
+       <ul>
+        <li class="show-mob navsearchblock navbar-form">
+         <i class="fa fa-search navsearchicon">
+         </i>
+         <input class="navsearch" id="globalsearch1" type="text"/>
+         <select class="yearSelecthead futversion" name="year">
+          <option value="FUT 23">
+           FUT 23
+          </option>
+          <option value="FUT 22">
+           FUT 22
+          </option>
+          <option value="FUT 21">
+           FUT 21
+          </option>
+          <option value="FUT 20">
+           FUT 20
+          </option>
+          <option value="FUT 19">
+           FUT 19
+          </option>
+          <option value="FUT 18">
+           FUT 18
+          </option>
+          <option value="FUT 17">
+           FUT 17
+          </option>
+          <option value="FUT 16">
+           FUT 16
+          </option>
+          <option value="FUT 15">
+           FUT 15
+          </option>
+          <option value="FUT 14">
+           FUT 14
+          </option>
+          <option value="FUT 13">
+           FUT 13
+          </option>
+          <option value="FUT 12">
+           FUT 12
+          </option>
+          <option value="FUT 11">
+           FUT 11
+          </option>
+          <option value="FUT 10">
+           FUT 10
+          </option>
+          <option value="CM 23">
+           CM 23
+          </option>
+          <option value="CM 22">
+           CM 22
+          </option>
+          <option value="CM 21">
+           CM 21
+          </option>
+          <option value="CM 20">
+           CM 20
+          </option>
+          <option value="CM 19">
+           CM 19
+          </option>
+          <option value="CM 18">
+           CM 18
+          </option>
+          <option value="CM 17">
+           CM 17
+          </option>
+          <option value="CM 16">
+           CM 16
+          </option>
+          <option value="CM 15">
+           CM 15
+          </option>
+         </select>
+         <div class="globalsearch-results">
+         </div>
+         <style>
+          .globalsearch-results {
+                                    display: none;
+                                    padding: 5px;
+                                    width: 500px;
+                                    position: absolute;
+                                    background: #212121;
+                                    z-index: 1001;
+                                    max-height: 300px;
+                                    overflow: auto;
+                                }
+                                .globalsearch-result-row {
+                                    background: #363a3d;
+                                    border: 1px solid #363a3d;
+                                    padding: 5px;
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 5px;
+                                }
+                                .globalsearch-result-row:hover {
+                                    background: #202325;
+                                    border: 1px solid #404447;
+                                    cursor: pointer;
+                                }
+                                .globalsearch-results .selectedsearch {
+                                    background: #202325;
+                                    border: 1px solid #404447;
+                                    cursor: pointer;
+                                }
+                                .globalsearch-result-row:last-child {
+                                    margin-bottom: 0px;
+                                }
+                                .globalsearch-ovr {
+                                    color: #fff;
+                                    flex: 0 0 30px;
+                                    text-align: center;
+                                }
+                                .globalsearch-club {
+                                    flex: 0 0 30px;
+                                    text-align: center;
+                                }
+                                .globalsearch-nation {
+                                    margin-left: 10px;
+                                    flex: 0 0 32px;
+                                    text-align: center;
+                                }
+                                .globalsearch-name {
+                                    margin-left: 10px;
+                                    flex: 1 1 auto;
+                                    text-align: left;
+                                    color: #fff;
+                                    font-weight: bold;
+                                    font-size: 16px;
+                                }
+                                .globalsearch-name .positions {
+                                    font-size: 12px;
+                                    color: #fff;
+                                }
+                                .globalsearch-name .positions span {
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    color: #ccc;
+                                }
+                                @media(max-width: 600px) {
+                                    .globalsearch-results {
+                                        margin-left: -70px;
+                                        width: 100vw;
+                                        top: 42px;
+                                    }
+                                }
+         </style>
+        </li>
+        <li>
+         <a class="topnavplayers" href="/en/fifa23/players">
+          Players
+         </a>
+         <ul class="mainnav-submenu">
+          <li>
+           <a href="/en/fifa23/players">
+            <b>
+             FIFA 23
+            </b>
+            Players
+           </a>
+          </li>
+          <li>
+           <a href="/en/fifa23/players/latest">
+            <b>
+             FIFA 23
+            </b>
+            Latest Players
+           </a>
+          </li>
+          <li>
+           <a href="/en/otw-tracker">
+            OTW Tracker
+           </a>
+          </li>
+          <li>
+           <a href="/en/perfect-trios?league=13">
+            <b>
+             FIFA 23
+            </b>
+            Trios
+           </a>
+          </li>
+          <li>
+           <a href="/en/fifa23/changes">
+            <b>
+             FIFA 23
+            </b>
+            Up/Downgrades
+           </a>
+          </li>
+          <li>
+           <a href="/en/popular">
+            <i class="fas fa-fire">
+            </i>
+            FIFA 23 Popular Players
+           </a>
+          </li>
+          <li>
+           <a href="/en/lowest-price-ratings">
+            FIFA 23 Lowest Prices
+           </a>
+          </li>
+          <li>
+           <a href="/en/priceranges/console">
+            FIFA 23 Price Range Changes
+           </a>
+          </li>
+          <li>
+           <a href="/en/fifa23/clubs">
+            FIFA 23 Clubs
+           </a>
+          </li>
+          <li>
+           <a href="/en/fifa23/leagues">
+            FIFA 23 Leagues
+           </a>
+          </li>
+          <li>
+           <a href="/en/fifa23/nations">
+            FIFA 23 Nations
+           </a>
+          </li>
+          <li class="divider">
+          </li>
+          <li class="dropdown">
+           <a href="Javascript:;">
+            FIFA Generations
+           </a>
+           <ul class="dropright-menu" style="max-height:200px;overflow-y:auto;">
+            <li>
+             <a href="/en/fifa22/players">
+              FIFA 22 Players
+             </a>
+            </li>
+            <li>
+             <a href="/en/fifa21/players">
+              FIFA 21 Players
+             </a>
+            </li>
+            <li>
+             <a href="/en/fifa20/players">
+              FIFA 20 Players
+             </a>
+            </li>
+            <li>
+             <a href="/en/fifa19/players">
+              FIFA 19 Players
+             </a>
+            </li>
+            <li>
+             <a href="/en/fifa18/players">
+              FIFA 18 Players
+             </a>
+            </li>
+            <li>
+             <a href="/en/fifa18/worldcup/players">
+              FIFA 18 Worldcup Players
+             </a>
+            </li>
+            <li>
+             <a href="/en/fifa17/players">
+              FIFA 17 Players
+             </a>
+            </li>
+            <li>
+             <a href="/en/fifa16/players">
+              FIFA 16 Players
+             </a>
+            </li>
+            <li>
+             <a href="/en/fifa15/players">
+              FIFA 15 Players
+             </a>
+            </li>
+            <li>
+             <a href="/en/fifa14/players">
+              FIFA 14 Players
+             </a>
+            </li>
+            <li>
+             <a href="/en/fifa13/players">
+              FIFA 13 Players
+             </a>
+            </li>
+            <li>
+             <a href="/en/fifa12/players">
+              FIFA 12 Players
+             </a>
+            </li>
+            <li>
+             <a href="/en/fifa11/players">
+              FIFA 11 Players
+             </a>
+            </li>
+            <li>
+             <a href="/en/fifa10/players">
+              FIFA 10 Players
+             </a>
+            </li>
+            <li>
+             <a href="/en/worldcup-players">
+              World Cup Players
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="divider">
+          </li>
+          <li>
+           <a href="/en/fifa23/custom-player">
+            Card Generator
+           </a>
+          </li>
+          <li>
+           <a href="/en/fifa23/predictions">
+            FIFA 23 Predictions
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a class="topnavsquadbuilder" href="/en/fifa23/squad-builder">
+          Builder
+         </a>
+         <ul class="mainnav-submenu">
+          <li>
+           <a href="/en/fifa23/squad-builder">
+            <b>
+             FIFA 23
+            </b>
+            Squad Builder
+           </a>
+          </li>
+          <li>
+           <a href="/en/fifa22/squad-builder">
+            FIFA 22 Squad Builder
+           </a>
+          </li>
+          <li>
+           <a href="/en/fifa21/squad-builder">
+            FIFA 21 Squad Builder
+           </a>
+          </li>
+          <li>
+           <a href="/en/fifa20/squad-builder">
+            FIFA 20 Squad Builder
+           </a>
+          </li>
+          <li>
+           <a href="/en/squad-importer">
+            Squad Importer
+           </a>
+          </li>
+          <li>
+           <a href="/en/fifa19/squad-builder">
+            FIFA 19 Squad Builder
+           </a>
+          </li>
+          <li>
+           <a href="/en/custom-builder">
+            Custom Squad Builder
+           </a>
+          </li>
+          <li>
+           <a href="/en/squad-builder/generations">
+            Generations Squad Builder
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a class="topnavcareer" href="/en/fifa23/career-mode/players">
+          Career
+         </a>
+         <ul class="mainnav-submenu">
+          <li>
+           <a href="/en/fifa23/career-mode/players">
+            FIFA 23 Career Mode Players
+           </a>
+          </li>
+          <li>
+           <a href="/en/fifa23/career-mode/players?order=growth&amp;s=desc">
+            FIFA 23 Career Mode Highest Growth
+           </a>
+          </li>
+          <li class="divider">
+          </li>
+          <li>
+           <a href="/en/fifa22/career-mode/players">
+            FIFA 22 Career Mode Players
+           </a>
+          </li>
+          <li>
+           <a href="/en/fifa21/career-mode/players">
+            FIFA 21 Career Mode Players
+           </a>
+          </li>
+          <li>
+           <a href="/en/fifa20/career-mode/players">
+            FIFA 20 Career Mode Players
+           </a>
+          </li>
+          <li>
+           <a href="/en/fifa19/career-mode/players">
+            FIFA 19 Career Mode Players
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a class="topnavdraft" href="Javascript:;">
+          Trading
+         </a>
+         <ul class="mainnav-submenu">
+          <li class="dropdown">
+           <a href="Javascript:;">
+            Market
+            <i class="fa fa-chevron-right">
+            </i>
+           </a>
+           <ul class="dropright-menu" style="max-height:400px;overflow-y:auto;">
+            <a href="/en/market/overall/console/live">
+             Overall Market
+            </a>
+            <a href="/en/market/baseicons/console/live">
+             Base Icons
+            </a>
+            <a href="/en/market/midicons/console/live">
+             Mid Icons
+            </a>
+            <a href="/en/market/89rated/console/live">
+             89 Rated
+            </a>
+            <a href="/en/market/88rated/console/live">
+             88 Rated
+            </a>
+            <a href="/en/market/87rated/console/live">
+             87 Rated
+            </a>
+            <a href="/en/market/86rated/console/live">
+             86 Rated
+            </a>
+            <a href="/en/market/85rated/console/live">
+             85 Rated
+            </a>
+            <a href="/en/market/84rated/console/live">
+             84 Rated
+            </a>
+            <a href="/en/market/83rated/console/live">
+             83 Rated
+            </a>
+            <a href="/en/fifa21/market/83rated/playstation/live">
+             FIFA 21 Market
+            </a>
+           </ul>
+          </li>
+          <li>
+           <a href="/en/lists">
+            Investment Lists
+           </a>
+          </li>
+          <li>
+           <a href="/en/consumables">
+            Consumable Prices
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a class="topnavdraft" href="/en/fifa23/fut-draft">
+          Draft
+         </a>
+         <ul class="mainnav-submenu">
+          <li>
+           <a href="/en/fifa23/fut-draft">
+            FIFA 23 Draft Simulator
+           </a>
+          </li>
+          <li>
+           <a href="/en/fifa22/fut-draft">
+            FIFA 22 Draft Simulator
+           </a>
+          </li>
+          <li>
+           <a href="/en/fifa21/fut-draft">
+            FIFA 21 Draft Simulator
+           </a>
+          </li>
+          <li>
+           <a href="/en/fifa20/fut-draft">
+            FIFA 20 Draft Simulator
+           </a>
+          </li>
+          <li>
+           <a href="/en/fifa19/fut-draft">
+            FIFA 19 Draft Simulator
+           </a>
+          </li>
+          <li>
+           <a href="/en/fifa18/fut-draft">
+            FIFA 18 Draft Simulator
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="/en/pack-opener">
+          Packs
+         </a>
+         <ul class="mainnav-submenu">
+          <li>
+           <a href="/en/pack-opener">
+            Pack Opener
+           </a>
+          </li>
+          <li>
+           <a href="/en/fifa19/packs/leaderboard/daily">
+            Leaderboards
+           </a>
+          </li>
+          <li>
+           <a href="/en/club/fifa22/all/all/off">
+            FUTWIZ Club
+           </a>
+          </li>
+          <li class="divider">
+          </li>
+          <li>
+           <a href="/en/spinner">
+            Spinner
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="/en/fifa23/squad-building-challenges">
+          <img alt="Squad Building Challenges" src="/assets/img/site/nav/SBC.png"/>
+         </a>
+        </li>
+        <li>
+         <a href="/en/division-rivals/leaderboards/all/fifa23-season-1">
+          Competitive
+         </a>
+         <ul class="mainnav-submenu">
+          <li>
+           <a href="/en/division-rivals/leaderboards/all/fifa23-season-1">
+            Division Rivals Leaderboards
+           </a>
+          </li>
+          <li>
+           <a href="/en/fut-champions/leaderboards/august2021/all/all">
+            FUT Champs Leaderboards
+           </a>
+          </li>
+          <li>
+           <a href="/en/fut-champions/rewards">
+            FUT Champions Rewards
+           </a>
+          </li>
+          <li class="dropdown">
+           <a href="Javascript:;">
+            Events
+           </a>
+           <ul class="dropright-menu">
+            <li>
+             <a href="/en/fut-champions/champions-cup/fifa20/cup3/groups">
+              FIFA 20 Champions Cup 3
+             </a>
+            </li>
+            <li>
+             <a href="/en/fut-champions/champions-cup/fifa20/cup2/groups">
+              FIFA 20 Champions Cup 2
+             </a>
+            </li>
+            <li>
+             <a href="/en/fut-champions/champions-cup/fifa20/cup1/groups">
+              FIFA 20 Champions Cup 1
+             </a>
+            </li>
+            <li>
+             <a href="/en/fut-champions/champions-cup/playstation-playoffs/groups">
+              FIFA 19 Playstation Playoffs
+             </a>
+            </li>
+            <li>
+             <a href="/en/fut-champions/champions-cup/xbox-playoffs/groups">
+              FIFA 19 Xbox Playoffs
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="/en/fut-champions/teams">
+            Esport Teams
+           </a>
+          </li>
+          <li>
+           <a href="http://www.teamfutwiz.com" target="_BLANK">
+            Team FUTWIZ
+           </a>
+          </li>
+          <li class="divider">
+          </li>
+          <li>
+           <a href="/en/gamestats">
+            <img alt="FUTWIZ GameStats" class="lazyload" data-src="/assets/img/bargraph.png" width="17"/>
+            GameStats
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="/en/seasonobjectives">
+          Objectives
+         </a>
+        </li>
+        <li>
+         <a href="/en/daily-content">
+          Daily Content
+         </a>
+        </li>
+        <li class="hidetextmob">
+         <a href="/en/notifications/home">
+          Notifs
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          <i class="fas fa-ellipsis-h">
+          </i>
+         </a>
+         <ul class="mainnav-submenu">
+          <li>
+           <a href="/en/myfutclub">
+            FUT Club
+           </a>
+          </li>
+          <li>
+           <a href="/en/higherlower">
+            High/Low Game
+           </a>
+          </li>
+          <li class="icons-990">
+           <a href="Javascript:;" onclick="$('#taxcalc').appendTo('body').modal('show');">
+            Tax Calculator
+           </a>
+          </li>
+          <li class="icons-990">
+           <a href="https://www.twitter.com/futwiz" target="_BLANK">
+            Twitter
+           </a>
+          </li>
+          <li class="icons-990">
+           <a href="/en/login?return=/en/fifa23/player/lionel-messi/17392" rel="nofollow">
+            Login
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="mob-bars">
+         <a href="#">
+          <i class="fa fa-bars">
+          </i>
+         </a>
+        </li>
+       </ul>
+       <div class="clear">
+       </div>
+      </nav>
+     </div>
+     <div class="col-2" style="flex:0 0 13%;max-width:13%;">
+      <nav class="icons">
+       <ul>
+        <li>
+         <a href="https://www.twitter.com/futwiz" target="_BLANK">
+          <i class="fab fa-twitter">
+          </i>
+         </a>
+        </li>
+        <li>
+         <a href="Javascript:;" onclick="$('#taxcalc').appendTo('body').modal('show');">
+          <i class="fa fa-calculator">
+          </i>
+         </a>
+        </li>
+        <li>
+         <a href="/en/login">
+          <i class="fa fa-user">
+          </i>
+         </a>
+        </li>
+       </ul>
+       <div class="clear">
+       </div>
+      </nav>
+     </div>
+    </div>
+    <nav class="sub">
+     <ul>
+      <li>
+       <a href="/en/fifa23/totw/totw-8">
+        TOTW 8
+       </a>
+      </li>
+      <li>
+       <a href="/en/fifa23/all-totws">
+        TOTW Archive
+       </a>
+      </li>
+      <li class="hide-540">
+       <li>
+        <a href="/en/fifa23/players/latest">
+         FIFA 23 Latest Players
+        </a>
+       </li>
+       <li>
+        <a href="https://discord.gg/KMC2p4mbn9" target="_BLANK">
+         <i class="fa-brands fa-discord">
+         </i>
+         FUTWIZ Discord
+        </a>
+       </li>
+      </li>
+      <li class="switchtomoblink">
+       <a class="showmboilesite" href="Javascript:;">
+        Mobile Site
+       </a>
+      </li>
+     </ul>
+     <div class="clear">
+     </div>
+    </nav>
+   </div>
+  </header>
+  <main id="panel">
+   <div class="top-ad-placement" style="padding-top:0px;padding-bottom:0px;">
+    <div class="overlay">
+    </div>
+    <div class="content">
+     <div class="span12 footerad">
+      <div class="ad-728-center">
+       <div class="ad" id="nn_lb1">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <script src="/assets/js/mobile-detect.js?r1">
+   </script>
+   <script>
+    var md = new MobileDetect(window.navigator.userAgent);
+if(md.tablet() || md.mobile()) {
+    $('.topnavplayers').attr('href','Javascript:;');
+    $('.topnavsquadbuilder').attr('href','Javascript:;');
+    $('.topnavsquads').attr('href','Javascript:;');
+    $('.topnavcareer').attr('href','Javascript:;');
+    $('.topnavdraft').attr('href','Javascript:;');
+}
+   </script>
+   <div class="modal hide" id="taxcalc" role="dialog" style="position:fixed;top:30px;margin-left:-100px;left:38%;display:none;max-height:290px;">
+    <div class="modal-header">
+     <span class="font20" id="myModalLabel">
+      Tax Calculator
+     </span>
+     <div class="pull-right">
+      <a aria-hidden="true" data-dismiss="modal" href="Javascript:;">
+       <i class="fa fa-times">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="modal-body">
+     <div class="row">
+      <div class="col-4">
+       Sold For
+      </div>
+      <div class="col-8">
+       <input class="input-small fomt-control" id="tax-price" type="text">
+       </input>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-4">
+       Tax
+      </div>
+      <div class="col-8">
+       <input class="input-small fomt-control" id="tax" type="text"/>
+       <i class="icon-frown">
+       </i>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-4">
+       You Receive
+      </div>
+      <div class="col-8">
+       <input class="input-small fomt-control" id="tax-total" type="text"/>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-4">
+       Sell For
+      </div>
+      <div class="col-8">
+       <input class="input-small fomt-control" id="tax-sell" type="text"/>
+      </div>
+     </div>
+    </div>
+    <div class="modal-footer">
+     <button aria-hidden="true" class="btn" data-dismiss="modal">
+      Close
+     </button>
+    </div>
+   </div>
+   <style>
+    .playerpage {
+    background: #121212;
+}
+.playerpage-in {
+    position: relative;
+    width: 100%;
+    margin: 0px auto;
+}
+.player-version {
+    font-size: 16px;
+    color: #ccc;
+    font-weight: 400;
+}
+.player-stats-area {
+    background: #2a2a2a;
+}
+.player-stats-area-ctrl {
+    padding: 10px;
+    text-align: center;
+}
+.player-stats-area-ctrl a {
+    color: #ccc;
+    display: inline-block;
+    margin-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.player-stats-area-ctrl .active {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-weight: 500;
+}
+.player-stats-area-ctrl a:last-child {
+    margin-right: 0px;
+}
+.player-stats-area-inner {
+    background: #212121;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    color: #ccc;
+}
+.player-stats-area-inner h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.player-stats-grid {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.headline-stat {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.headline-stat-label {
+    flex: 0 0 75%;
+    text-align: left;
+}
+.headline-stat-num {
+    flex: 0 0 25%;
+    text-align: right;
+}
+.stats-grid-block {
+    flex: 0 0 45%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.stat-grid-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.player-stats-area-inner hr {
+    margin-top: 0px !important;
+    margin-bottom: 0px;
+    border-top: 0px;
+    border-bottom: 1px solid #666;
+    width: 65%;
+}
+.player-prices {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-sizing: border-box;
+    gap: 10px;
+    align-items: top;
+    justify-content: center;
+}
+.player-price-block {
+    flex: 0 0 48%;
+    background: #1f1f1f;
+    border-radius: 10px;
+    text-align: center;
+}
+.player-right-area {
+    width: 100%;
+    text-align: center;
+}
+.price-header {
+    padding: 10px;
+    box-sizing: border-box;
+}
+.price-header img {
+    width: 90px;
+}
+.player-price-block .price {
+    padding-left: 10px;;
+    padding-right: 10px;;
+    padding-bottom: 10px;;
+    box-sizing: border-box;
+}
+.player-price-block .price-num {
+    font-size: 26px;
+    font-weight: 500;
+}
+.player-price-block .price-compare {
+    font-size: 12px;
+    color: #999;
+}
+.player-price-block .price-updated {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #eee;
+}
+.player-price-block .extra-prices {
+    color: #66fbf9;
+    margin-top: 10px;
+    font-size: 14px;
+    min-height: 63px;
+}
+.player-price-block .pricerange-area {
+    border-top: 1px solid #303030;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+.player-price-block .pricerange-percent {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    height: 20px;
+    width: 100%;
+    background: rgba(255,255,255,0.1);
+    border-radius: 3px;
+    position: relative;
+}
+.player-price-block .pricerange-percent-fill {
+    height: 20px;
+    background: #66fbf9;
+    position: absolute;
+    border-radius: 3px;
+}
+.player-price-block .pricerange-percent-txt {
+    font-size: 12px;
+    position: absolute;
+    top: 1px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
+.player-price-block .pricerange {
+    font-size: 10px;
+    color: #999;
+}
+.soldprices-button {
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    width: 130px;
+    padding: 7px;
+    background: #363a3d;
+    border-radius: 5px;
+    border: 1px solid #404447;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.soldprices-button:hover {
+    color: #fff;
+    background: #202325;
+}
+.control-bar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    display: flex;
+    text-align: left;
+    color:#fff;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.control-bar-pname {
+    flex:1 1 auto;
+    display: flex;
+    align-items: center;
+}
+.pname-h1 {
+    flex: 1 1 auto;
+}
+.pname-club {
+    flex:0 0 auto;
+    font-size:14px;
+}
+.control-bar h1 {
+    font-size: 28px;
+}
+.player-ctrl-links {
+    flex:1 1 auto;
+    text-align: right;
+    font-size:14px;
+    text-transform:uppercase;
+}
+.control-bar a {
+    display: inline-block;
+    color: #fff;
+    margin-right: 15px;
+}
+.control-bar a:last-child {
+    margin-right: 0px;
+}
+.att1bar,.att2bar,.att3bar,.att4bar,.att5bar,.att6bar {
+    color: #000;
+    border-radius: 5px;
+}
+.player-info-bar-mob {
+    margin: 10px;
+    padding: 10px;
+    background: #1f1f1f;
+    display: flex;
+    color: #fff;
+    border-radius: 10px;
+    justify-content: center;
+}
+.player-info-stat {
+    font-size: 16px;
+    text-align: center;
+    flex: 0 0 50px;
+    align-items: center;
+}
+.player-info-stat div:nth-child(2) {
+    font-size: 12px;
+    color: #999;
+    text-transform: uppercase;
+}
+.player-positions-mob {
+    text-align: center;
+    color:#fff;
+}
+.other-version-list {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.player-info-desktop {
+    display: none;
+}
+.pricegraphs {
+    margin-top: 20px;
+}
+.graph-control {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    border-radius: 5px;
+}
+.graph-control a {
+    display: inline-block;
+    color: #fff;
+    margin-right: 5px;
+}
+.graph-control .active {
+    padding: 7px;
+    background: #363a3d;
+    border-radius: 5px;
+    border: 1px solid #404447;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+.altpos-pitch .poscb, .altpos-pitch .poslb, .altpos-pitch .posrb {
+    bottom: 20px;
+}
+.altpos-pitch .posrwb {
+    right: 10px;
+    bottom: 70px;
+}
+.altpos-pitch .poslwb {
+    left: 10px;
+    bottom: 70px;
+}
+.altpos-pitch .poscdm {
+    bottom: 90px;
+}
+.altpos-pitch .poscm, .altpos-pitch .poslm, .altpos-pitch .posrm {
+    bottom: 155px;
+}
+.altpos-pitch .poscam {
+    bottom: 205px;
+}
+.altpos-pitch .poslw, .altpos-pitch .posrw {
+    bottom: 255px;
+}
+.altpos-pitch .poscf {
+    bottom: 255px;
+}
+.altpos-pitch .posst {
+    bottom: 300px;
+}
+.altpos-pitch .poscb, .altpos-pitch .poscdm, .altpos-pitch .poscm, .altpos-pitch .poscam, .altpos-pitch .poscf, .altpos-pitch .posst {
+    right: 123px;
+}
+.trait-block {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    background: #1b1b1b;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+.trait-block img {
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+.accelerate-chems {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.accelerate-chems div {
+    flex: 0 0 30%;
+    background: #1b1b1b;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.desktopcembuttons {
+    display: none;
+}
+.chem-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.chem-buttons a {
+    flex: 0 0 42px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 42px;
+    height: 42px;
+    margin-right: 5px;
+}
+.chem-buttons .active {
+    background: url(/assets/img/site/pp-chem-focus.png?v);
+}
+.chem-buttons a:hover {
+    background: url(/assets/img/site/pp-chem-focus.png?v);
+}
+.chem-diamonds {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    background: #29333e;
+    color: #31576e;
+    font-size: 12px;
+    box-shadow: 1px 1px 3px #000;
+}
+.chem-buttons .fa-diamond:nth-child(1) {
+    position: absolute;
+    left: 4px;
+    bottom: 7px;
+}
+.chem-buttons .fa-diamond:nth-child(2) {
+    position: absolute;
+    left: 11px;
+    top: 5px;
+}
+.chem-buttons .fa-diamond:nth-child(3) {
+    position: absolute;
+    right: 4px;
+    bottom: 7px;
+}
+.activediamond {
+    color: #45a9dd;
+}
+.altpos-inner-l2 {
+    color: #ddd;
+    font-weight: 500;
+}
+.altpos-inner-l1 {
+    color: #91cf20;
+}
+.altpos-pos {
+    border: 0px;
+    background: #29333e;
+}
+.chem-select {
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.chem-select a {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    color: #fff;
+    width: 130px;
+    padding: 7px;
+    background: #363a3d;
+    border-radius: 5px;
+    border: 1px solid #404447;
+    box-sizing: border-box;
+}
+.chem-select a:hover {
+    background: #202325;
+}
+.chem-select .active {
+    background: #202325;
+}
+.player-stats-area-info {
+    display: none;
+    background: #212121;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+.latest-sales-area {
+    display: flex;
+    align-items: top;
+    margin-top:20px;
+}
+.auctions-area {
+    background: #212121;
+    padding:20px;
+    flex:0 0 370px;
+    border-radius: 20px;
+}
+.sales-area {
+    background: #212121;
+    border-radius: 20px;
+    padding:20px;
+    flex:0 0 500px;
+    margin-left:20px;
+}
+.avg-area {
+    flex:0 0 280px;
+    margin-left:30px;
+    color:#fff;
+}
+.avg-block {
+    background: #212121;
+    border-radius: 20px;
+    padding:20px;
+    text-align:center;
+    margin-bottom: 10px;
+}
+.avg-title {
+    font-size:16px;
+}
+.avg-price {
+    font-size:28px;
+    color:#fff
+}
+.lowesttime {
+    font-size:12px;
+}
+.lowesttime-count {
+    font-size:12px;
+}
+.sale-row-head {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #666;
+    color: #999;
+    font-weight: bold;
+}
+.sale-row {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #404447;
+    color: #ccc;
+}
+.sale-time {
+    flex: 0 0 100px;
+}
+.sale-price {
+    flex: 0 0 120px;
+}
+.sale-price-bin {
+    flex: 0 0 120px;
+    font-weight: bold;
+}
+.sale-time-auc {
+    flex: 0 0 100px;
+}
+.sale-price-auc {
+    flex: 0 0 120px;
+}
+.sale-price-bin-auc {
+    flex: 0 0 120px;
+    font-weight: bold;
+}
+.sale-type {
+    flex: 0 0 100px;
+}
+.sale-type .fa-tag {
+    color: #d1e59d;
+}
+.sale-type .fa-gavel {
+    color: #ffcc80;
+}
+.heading {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.console-swap-sales {
+    float: right;
+    font-size:14px;
+    margin-top: 5px;
+}
+.console-swap-sales a {
+    color: #999;
+}
+.console-swap-sales .active {
+    color: #eee;
+    font-weight: bold;
+}
+.loading-icon {
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+}
+.no-data {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.accelerate-header {
+    background:#363a3d;
+    padding:5px;
+    color:#fff;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top:10px;
+}
+.accelerate-type {
+    background: #1b1b1b;
+    padding:5px;
+    text-align: center;
+}
+@media(max-width: 700px) {
+    .accelerate-chems div {
+        flex: 0 0 100%;
+    }
+    .control-bar {
+        padding-left: 0px;
+        padding-right: 0px;
+        display: flex;
+        text-align: left;
+        color:#fff;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .control-bar-pname {
+        flex:0 0 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .pname-h1 {
+        flex: 0 0 100%;
+    }
+    .pname-club {
+        margin-top: 5px;
+        flex:0 0 100%;
+        font-size:12px;
+    }
+    .player-ctrl-links {
+        margin-top: 15px;
+        flex:0 0 100%;
+        text-align: center;
+        font-size:12px;
+        text-transform:uppercase;
+        background: #212121;
+        padding: 10px;
+    }
+    .pricegraphs {
+        display: none;
+        margin-top: 0px;
+    }
+    .graph-control {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .latest-sales-area {
+        display: none;
+        flex-wrap: wrap;
+        margin-top: 0px;
+    }
+    .auctions-area {
+        flex:0 0 100%;
+        padding:10px;
+        border-radius: 0px;
+        order: 1;
+    }
+    .sales-area {
+        flex:0 0 100%;
+        margin-left:0px;
+        border-radius: 0px;
+        padding:10px;
+        order: 2;
+    }
+    .avg-area {
+        margin-top: 0px;
+        flex:0 0 100%;
+        margin-left:0px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        background: #212121;
+    }
+    .avg-block:first-child {
+        flex: 0 0 92%;
+    }
+    .avg-block {
+        flex: 0 1 45%;
+        background: #1b1b1b;
+        order: 0;
+    }
+    .sale-row-head {
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        border-bottom: 1px solid #444;
+        color: #999;
+        font-weight: bold;
+    }
+    .sale-row {
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        border-bottom: 1px solid #333;
+        color: #ccc;
+    }
+    .sale-row:last-child {
+        border-bottom: 0px;
+    }
+    .sale-time-auc {
+        flex: 0 0 80px;
+    }
+    .sale-price-auc {
+        flex: 0 0 100px;
+    }
+    .sale-price-bin-auc {
+        flex: 0 0 120px;
+        font-weight: bold;
+    }
+    .sale-row {
+        font-size: 12px;
+        align-items: center;
+    }
+    .sale-time {
+        flex: 0 0 50px;
+    }
+    .sale-price {
+        flex: 0 0 100px;
+    }
+    .sale-price-bin {
+        flex: 0 0 100px;
+        font-weight: bold;
+    }
+    .sale-type {
+        flex: 0 0 50px;
+    }
+    .hidestatus {
+        display: none;
+    }
+    .mob-auctions {
+        background: #1b1b1b;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
+@media(min-width: 700px) {
+    .desktopcembuttons {
+        display: block;
+    }
+    .playerpage {
+        padding-top: 20px;
+    }
+    .player-info-stat {
+        flex: 0 0 60px;
+    }
+    .player-stats-area {
+        background: none;
+        display: flex;
+        gap: 20px;
+    }
+    .player-stats-area-info {
+        display: block;
+        flex: 0 0 300px;
+        border-radius: 20px;
+        background: #212121;
+        text-align: center;
+        color: #fff;
+        padding: 10px;
+    }
+    .player-stats-area-inner {
+        border-radius: 20px;
+        flex: 0 0 890px;
+    }
+    .player-stats-area-ctrl {
+        display: none;
+    }
+    .player-info-desktop {
+        display: block;
+        flex: 1 1 534px;
+    }
+    .player-positions-mob {
+        display: none;
+    }
+    .player-info-bar-mob {
+        display: none;
+    }
+    .player-info-bar {
+        margin: 10px;
+        padding: 10px;
+        background: #1b1b1b;
+        display: flex;
+        color: #fff;
+        border-radius: 10px;
+        justify-content: center;
+    }
+    .player-positions {
+        text-align: center;
+        color:#fff;
+    }
+    .other-version-list {
+        text-align: left;
+    }
+    .player-area {
+        display: flex;
+        align-items: center;
+    }
+    .player-card {
+        flex: 0 0 260px;
+    }
+    .player-prices {
+        flex: 0 0 610px;
+        align-items: top;
+    }
+    .player-right-area {
+        align-items: center;
+        flex: 0 0 340px;
+    }
+    .playerpage-in {
+        position: relative;
+        width: 1210px;
+        margin: 0px auto;
+    }
+    .player-price-block {
+        flex: 0 0 40%;
+    }
+    .playername {
+        padding-top: 10px;
+        text-align: left;
+    }
+    .playername h1 {
+        font-size: 28px;
+    }
+    .player-version {
+        font-size: 14px;
+    }
+    .stats-grid-block {
+        flex: 0 0 128px;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    .hidedesktop {
+        display: none;
+    }
+    .player-price-block .price-num {
+        font-size: 36px;
+    }
+    .player-price-block .extra-prices {
+        font-size: 16px;
+        min-height: 72px;
+    }
+    .control-bar {
+        background: #1f1f1f;
+        border-radius: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .control-bar a:nth-child(3) {
+        margin-right: 0px;
+    }
+}
+   </style>
+   <div class="playerpage no-trans-all">
+    <div class="playerpage-in">
+     <div class="control-bar">
+      <div class="control-bar-pname">
+       <div class="pname-h1">
+        <h1>
+         Lionel Messi
+         <div class="player-version">
+          FIFA 23 Champions League Live
+         </div>
+        </h1>
+       </div>
+       <div class="pname-club">
+        <a href="/en/fifa23/nation/argentina/rating/all/52/0" style="margin-right: 10px;">
+         <img alt="Argentina flag" src="/assets/img/fifa23/flags/52.png" style="height:18px;"/>
+         Argentina
+        </a>
+        <a href="/en/fifa23/club/paris-sg/rating/all/all/73/0" style="margin-right: 10px;">
+         <img alt="Paris SG badge" src="/assets/img/fifa23/badges/73.png" style="height:26px;"/>
+         Paris SG
+        </a>
+        <a href="/en/fifa23/league/ligue-1-uber-eats/rating/all/all/16/0">
+         <img alt="FRA 1 logo" src="/assets/img/fifa23/leagues/16.png" style="height:26px;"/>
+         FRA 1
+        </a>
+       </div>
+      </div>
+      <div class="player-ctrl-links">
+       <a href="/en/fifa23/compare/17392">
+        Compare
+       </a>
+       <a href="/en/player/history/158023">
+        Generations
+       </a>
+       <a href="/en/fifa23/player/lionel-messi/17392/alternatives">
+        Similar
+       </a>
+      </div>
+     </div>
+     <div class="player-area">
+      <div class="player-card">
+       <div style="filter:drop-shadow(0px 0px 10px rgba(255,255,255,0.3));width:260px;margin-left: auto;margin-right: auto;">
+        <div class="card-23 card-23-ucllive">
+         <div class="card-23-face-alt">
+          <img alt="Messi face" src="/assets/img/fifa23/faces/50489671.png"/>
+         </div>
+         <div class="card-23-badge">
+          <img alt="Badge" src="/assets/img/fifa23/badges/73.png"/>
+         </div>
+         <div class="card-23-flag">
+          <img alt="Nation" src="/assets/img/fifa23/flags/52.png"/>
+         </div>
+         <div class="card-23-name">
+          Messi
+         </div>
+         <div class="card-23-rating">
+          94
+         </div>
+         <div class="card-23-position">
+          RW
+         </div>
+         <div class="card-23-atts">
+          <div class="card-23-atts1">
+           <div class="card-23-attnum card-23-attnum1">
+            85
+           </div>
+           <div class="card-23-attlabel card-23-attlabel1">
+            PAC
+           </div>
+           <div class="card-23-attnum card-23-attnum4">
+            97
+           </div>
+           <div class="card-23-attlabel card-23-attlabel4">
+            DRI
+           </div>
+          </div>
+          <div class="card-23-atts2">
+           <div class="card-23-attnum card-23-attnum2">
+            92
+           </div>
+           <div class="card-23-attlabel card-23-attlabel2">
+            SHO
+           </div>
+           <div class="card-23-attnum card-23-attnum5">
+            37
+           </div>
+           <div class="card-23-attlabel card-23-attlabel5">
+            DEF
+           </div>
+          </div>
+          <div class="card-23-atts3">
+           <div class="card-23-attnum card-23-attnum3">
+            94
+           </div>
+           <div class="card-23-attlabel card-23-attlabel3">
+            PAS
+           </div>
+           <div class="card-23-attnum card-23-attnum6">
+            69
+           </div>
+           <div class="card-23-attlabel card-23-attlabel6">
+            PHY
+           </div>
+          </div>
+         </div>
+         <div class="card-23-headeroverlay">
+         </div>
+         <div class="card-23-split card-23-flag-split">
+         </div>
+         <div class="card-23-split card-23-name-split">
+         </div>
+         <div class="card-23-split card-23-atts-split">
+         </div>
+         <div class="card-23-split card-23-chem-split">
+         </div>
+         <div class="card-23-chemstyleimg">
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="player-positions-mob">
+       Positions: RW, RM
+      </div>
+      <div class="player-info-bar-mob">
+       <div class="player-info-stat">
+        <div>
+         4
+         <span style="font-size: 10px;color:#FFE62D">
+          <i class="fa fa-star">
+          </i>
+         </span>
+        </div>
+        <div>
+         Skills
+        </div>
+       </div>
+       <div class="player-info-stat">
+        <div>
+         4
+         <span style="font-size: 10px;color:#FFE62D">
+          <i class="fa fa-star">
+          </i>
+         </span>
+        </div>
+        <div>
+         W/F
+        </div>
+       </div>
+       <div class="player-info-stat">
+        <div>
+         L/L
+        </div>
+        <div>
+         W/R
+        </div>
+       </div>
+       <div class="player-info-stat">
+        <div>
+         Left
+        </div>
+        <div>
+         Foot
+        </div>
+       </div>
+       <div class="player-info-stat">
+        <div>
+         35
+        </div>
+        <div>
+         Age
+        </div>
+       </div>
+       <div class="player-info-stat">
+        <div>
+         5' 7"
+        </div>
+        <div>
+         169cm
+        </div>
+       </div>
+       <div class="player-info-stat">
+        <div>
+         67
+         <span style="font-size: 10px;">
+          kg
+         </span>
+        </div>
+        <div>
+         Weight
+        </div>
+       </div>
+      </div>
+      <div class="player-prices">
+       <div class="player-price-block">
+        <div class="price-header">
+         <img alt="Console logo" src="https://www.futwiz.com/assets/img/prices-multi.png?r2"/>
+        </div>
+        <div class="price">
+         <div class="price-num" style="color:#66fbf9;">
+          1,308,000
+         </div>
+         <div class="price-compare">
+          <span>
+           <i class="fa fa-caret-down">
+           </i>
+           -83,500 (-6.00%)
+          </span>
+         </div>
+         <div class="price-updated">
+          Updated: 6 min ago
+         </div>
+         <div class="extra-prices">
+          <div>
+           <img alt="Coins" src="/assets/img/fifa17/champions/coins.png" width="10"/>
+           1,330,000
+          </div>
+          <div>
+           <img alt="Coins" src="/assets/img/fifa17/champions/coins.png" width="10"/>
+           1,340,000
+          </div>
+          <div>
+           <img alt="Coins" src="/assets/img/fifa17/champions/coins.png" width="10"/>
+           1,356,000
+          </div>
+         </div>
+         <div class="pricerange-area">
+          <div class="pricerange-percent">
+           <div class="pricerange-percent-fill" style="width:65%;">
+           </div>
+           <div class="pricerange-percent-txt">
+            PR% 65
+           </div>
+          </div>
+          <div class="pricerange">
+           PR: 105,000 - 2,000,000
+          </div>
+         </div>
+         <a class="soldprices-button" href="/en/fifa23/player/lionel-messi/17392/soldprices/console">
+          <i class="fa fa-coins">
+          </i>
+          Sold Prices
+         </a>
+        </div>
+       </div>
+       <div class="player-price-block">
+        <div class="price-header">
+         <img alt="Origin Logo" src="https://www.futwiz.com/assets/img/prices-pc-logo.png?r2"/>
+        </div>
+        <div class="price">
+         <div class="price-num" style="color:#ff9700;">
+          2,000,000
+         </div>
+         <div class="price-compare">
+          <span>
+           <i class="fa fa-caret-up">
+           </i>
+           2,000 (0.10%)
+          </span>
+         </div>
+         <div class="price-updated">
+          Updated: 21 min ago
+         </div>
+         <div class="extra-prices" style="color:#ffcb80;">
+          <div>
+           <img alt="Coins" src="/assets/img/fifa17/champions/coins.png" width="10"/>
+           2,000,000
+          </div>
+         </div>
+         <div class="pricerange-area">
+          <div class="pricerange-percent">
+           <div class="pricerange-percent-fill" style="width:100%;background: #ff9700;">
+           </div>
+           <div class="pricerange-percent-txt">
+            PR% 100
+           </div>
+          </div>
+          <div class="pricerange">
+           PR: 105,000 - 2,000,000
+          </div>
+         </div>
+         <a class="soldprices-button soldprices-button-pc" href="/en/fifa23/player/lionel-messi/17392/soldprices/pc">
+          <i class="fa fa-coins">
+          </i>
+          Sold Prices
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="player-right-area">
+       <div class="ad" id="nn_mpu1">
+       </div>
+      </div>
+     </div>
+     <div class="other-version-list">
+      <a href="/en/fifa23/player/lionel-messi/51">
+       <div class="otherversion23 otherversion23-gold" style="display: inline-block;">
+        <div class="otherversion23-txt">
+         91
+        </div>
+       </div>
+      </a>
+      <a href="/en/fifa23/player/lionel-messi/17497">
+       <div class="otherversion23 otherversion23-potmligue1" style="display: inline-block;">
+        <div class="otherversion23-txt">
+         92
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="player-stats-area">
+      <div class="player-stats-area-ctrl">
+       <a class="statslink active" href="Javascript:;" onclick="$('.player-stats-display').show();$('.pricegraphs').hide();$('.latest-sales-area').hide();$('.player-stats-area-info').hide();$(this).attr('class','statslink active');$('.graphlink').attr('class','graphlink');$('.ratinglink').attr('class','ratinglink');">
+        Stats
+       </a>
+       <a class="graphlink" href="Javascript:;" onclick="$('.player-stats-display').hide();$('.player-stats-area-info').hide();$('.pricegraphs').show();$('.latest-sales-area').show();$(this).attr('class','graphlink active');$('.statslink').attr('class','statslink');$('.ratinglink').attr('class','ratinglink');">
+        Prices
+       </a>
+       <a class="ratinglink" href="Javascript:;" onclick="$('.player-stats-display').hide();$('.player-stats-area-info').show();$('.pricegraphs').hide();$('.latest-sales-area').hide();$(this).attr('class','ratinglink active');$('.statslink').attr('class','statslink');$('.graphlink').attr('class','graphlink');">
+        Ratings
+       </a>
+       <a href="Javascript:;" onclick="$('body').append('&lt;div class=\'bodyoverlay\'&gt;&lt;div&gt;');$('.chem-select-overlay').attr('style','display:flex;');">
+        Chem
+       </a>
+      </div>
+      <div class="player-stats-area-inner">
+       <div class="player-stats-display">
+        <h3>
+         Lionel Messi 94 Champions League Live In Game Stats
+        </h3>
+        <hr/>
+        <div class="player-info-desktop">
+         <div class="player-info-bar">
+          <div class="player-info-stat">
+           <div>
+            RW
+           </div>
+           <div>
+            Pos
+           </div>
+          </div>
+          <div class="player-info-stat">
+           <div>
+            RM
+           </div>
+           <div>
+            Alt. Pos
+           </div>
+          </div>
+          <div class="player-info-stat">
+           <div>
+            4
+            <span style="font-size: 10px;color:#FFE62D">
+             <i class="fa fa-star">
+             </i>
+            </span>
+           </div>
+           <div>
+            Skills
+           </div>
+          </div>
+          <div class="player-info-stat">
+           <div>
+            4
+            <span style="font-size: 10px;color:#FFE62D">
+             <i class="fa fa-star">
+             </i>
+            </span>
+           </div>
+           <div>
+            W/F
+           </div>
+          </div>
+          <div class="player-info-stat">
+           <div>
+            LOW/LOW
+           </div>
+           <div>
+            W/R
+           </div>
+          </div>
+          <div class="player-info-stat">
+           <div>
+            Left
+           </div>
+           <div>
+            Foot
+           </div>
+          </div>
+          <div class="player-info-stat">
+           <div>
+            35
+           </div>
+           <div>
+            Age
+           </div>
+          </div>
+          <div class="player-info-stat">
+           <div>
+            5' 7"
+           </div>
+           <div>
+            169cm
+           </div>
+          </div>
+          <div class="player-info-stat">
+           <div>
+            67
+            <span style="font-size: 10px;">
+             kg
+            </span>
+           </div>
+           <div>
+            Weight
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="player-stats-grid">
+         <div class="stats-grid-block">
+          <div class="headline-stat">
+           <div class="headline-stat-label">
+            PAC
+           </div>
+           <div class="headline-stat-num">
+            <div class="highestbarcolour att1bar">
+             85
+            </div>
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Acceleration
+            <span class="accelerationboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour accelerationstat">
+            91
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highestbarcolour accelerationbar" style="width:92%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Sprint Speed
+            <span class="sprintspeedboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour sprintspeedstat">
+            80
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highbarcolour sprintspeedbar" style="width:81%;">
+           </div>
+          </div>
+          <div class="accelerate-header">
+           Accele
+           <b>
+            RATE
+           </b>
+          </div>
+          <div class="accelerate-type" data-acceltype="Explosive">
+           Explosive
+          </div>
+         </div>
+         <div class="stats-grid-block">
+          <div class="headline-stat">
+           <div class="headline-stat-label">
+            SHO
+           </div>
+           <div class="headline-stat-num">
+            <div class="highestbarcolour att2bar">
+             92
+            </div>
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Positioning
+            <span class="positioningboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour positioningstat">
+            96
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highestbarcolour positioningbar" style="width:97%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Finishing
+            <span class="finishingboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour finishingstat">
+            93
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highestbarcolour finishingbar" style="width:94%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Shot Power
+            <span class="shotpowerboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour shotpowerstat">
+            89
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highestbarcolour shotpowerbar" style="width:90%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Long Shots
+            <span class="longshotboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour longshotstat">
+            94
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highestbarcolour longshotbar" style="width:95%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Volleys
+            <span class="volleysboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour volleysstat">
+            91
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highestbarcolour volleysbar" style="width:92%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Penalties
+            <span class="penaltiesboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour penaltiesstat">
+            78
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highbarcolour penaltiesbar" style="width:79%;">
+           </div>
+          </div>
+         </div>
+         <div class="stats-grid-block">
+          <div class="headline-stat">
+           <div class="headline-stat-label">
+            PAS
+           </div>
+           <div class="headline-stat-num">
+            <div class="highestbarcolour att3bar">
+             94
+            </div>
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Vision
+            <span class="visionboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour visionstat">
+            98
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highestbarcolour visionbar" style="width:99%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Crossing
+            <span class="crossingboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour crossingstat">
+            88
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highestbarcolour crossingbar" style="width:89%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            FK. Acc.
+            <span class="fkaccboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour fkaccstat">
+            97
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highestbarcolour fkaccbar" style="width:98%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Short Pass
+            <span class="shortpassboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour shortpassstat">
+            95
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highestbarcolour shortpassbar" style="width:96%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Long Pass
+            <span class="longpassboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour longpassstat">
+            94
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highestbarcolour longpassbar" style="width:95%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Curve
+            <span class="curveboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour curvestat">
+            97
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highestbarcolour curvebar" style="width:98%;">
+           </div>
+          </div>
+         </div>
+         <div class="stats-grid-block">
+          <div class="headline-stat">
+           <div class="headline-stat-label">
+            DRI
+           </div>
+           <div class="headline-stat-num">
+            <div class="highestbarcolour att4bar">
+             97
+            </div>
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Agility
+            <span class="agilityboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour agilitystat">
+            94
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highestbarcolour agilitybar" style="width:95%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Balance
+            <span class="balanceboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour balancestat">
+            98
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highestbarcolour balancebar" style="width:99%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Reactions
+            <span class="reactionsboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour reactionsstat">
+            95
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highestbarcolour reactionsbar" style="width:96%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Ball Control
+            <span class="ballcontrolboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour ballcontrolstat">
+            96
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highestbarcolour ballcontrolbar" style="width:97%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Dribbling
+            <span class="dribblingboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour dribblingstat">
+            98
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highestbarcolour dribblingbar" style="width:99%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Composure
+            <span class="composureboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour composurestat">
+            99
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highestbarcolour composurebar" style="width:100%;">
+           </div>
+          </div>
+         </div>
+         <div class="stats-grid-block">
+          <div class="headline-stat">
+           <div class="headline-stat-label">
+            DEF
+           </div>
+           <div class="headline-stat-num">
+            <div class="lowbarcolour att5bar">
+             37
+            </div>
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Interceptions
+            <span class="tactawareboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour tactawarestat">
+            44
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front lowbarcolour tactawarebar" style="width:45%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Heading Acc.
+            <span class="headingaccboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour headingaccstat">
+            76
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highbarcolour headingaccbar" style="width:77%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Def. Awareness
+            <span class="markingboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour markingstat">
+            22
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front lowbarcolour markingbar" style="width:23%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Stand Tackle
+            <span class="standingtackleboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour standingtacklestat">
+            38
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front lowbarcolour standingtacklebar" style="width:39%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Slide Tackle
+            <span class="slidetackleboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour slidetacklestat">
+            26
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front lowbarcolour slidetacklebar" style="width:27%;">
+           </div>
+          </div>
+         </div>
+         <div class="stats-grid-block">
+          <div class="headline-stat">
+           <div class="headline-stat-label">
+            PHY
+           </div>
+           <div class="headline-stat-num">
+            <div class="mediumbarcolour att6bar">
+             69
+            </div>
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Jumping
+            <span class="jumpingboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour jumpingstat">
+            74
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highbarcolour jumpingbar" style="width:75%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Stamina
+            <span class="staminaboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour staminastat">
+            75
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highbarcolour staminabar" style="width:76%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Strength
+            <span class="strengthboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour strengthstat">
+            73
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front highbarcolour strengthbar" style="width:74%;">
+           </div>
+          </div>
+          <div class="individual-stat-container">
+           <div class="individual-stat-bar-label">
+            Aggression
+            <span class="aggressionboost" style="padding-left:0px;font-size:10px;position:absolute;right:-18px;top:4px;">
+            </span>
+           </div>
+           <div class="individual-stat-bar-stat textcolour aggressionstat">
+            48
+           </div>
+           <div class="individual-stat-bar-back">
+           </div>
+           <div class="individual-stat-bar-front lowbarcolour aggressionbar" style="width:49%;">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div style="text-align: center;margin-top: 20px;">
+         <div class="trait-block">
+          <img alt="Finesse Shot" src="/assets/img/traits/trait9.png?v1"/>
+          <div>
+           Finesse Shot
+          </div>
+         </div>
+         <div class="trait-block">
+          <img alt="Long Shot Taker" src="/assets/img/traits/trait12.png?v1"/>
+          <div>
+           Long Shot Taker
+          </div>
+         </div>
+         <div class="trait-block">
+          <img alt="Playmaker" src="/assets/img/traits/trait14.png?v1"/>
+          <div>
+           Playmaker
+          </div>
+         </div>
+         <div class="trait-block">
+          <img alt="Outside Foot Shot" src="/assets/img/traits/trait18.png?v1"/>
+          <div>
+           Outside Foot Shot
+          </div>
+         </div>
+         <div class="trait-block">
+          <img alt="Chip Shot" src="/assets/img/traits/trait26.png?v1"/>
+          <div>
+           Chip Shot
+          </div>
+         </div>
+         <div class="trait-block">
+          <img alt="Technical Dribbler" src="/assets/img/traits/trait27.png?v1"/>
+          <div>
+           Technical Dribbler
+          </div>
+         </div>
+        </div>
+        <div class="accelerate-chems">
+         <div class="lengthy-chem">
+          <h3>
+           Lengthy AcceleRATE
+          </h3>
+         </div>
+         <div class="explosive-chem">
+          <h3>
+           Explosive AcceleRATE
+          </h3>
+          basic - hunter - catalyst - shadow - sniper - finisher - deadeye - hawk - artist - powerhouse - maestro - engine - sentinel - guardian - gladiator - backbone
+         </div>
+         <div class="controlled-chem">
+          <h3>
+           Controlled AcceleRATE
+          </h3>
+          marksman - architect - anchor
+         </div>
+        </div>
+       </div>
+       <div class="pricegraphs">
+        <h3>
+         Lionel Messi 94 Champions League Live Price Graphs
+        </h3>
+        <div class="graph-control">
+         <a class="dailylink active" href="Javascript:;" onclick="$(this).attr('class','dailylink active');$('.hourlylink').attr('class','hourlylink');$('#hourly').hide();$('#daily').show();">
+          <i class="fa fa-calendar">
+          </i>
+          Daily Graph
+         </a>
+         <a class="hourlylink" href="Javascript:;" onclick="loadHourly();$('.dailylink').attr('class','dailylink');$(this).attr('class','hourlylink active');$('#hourly').show();$('#daily').hide();">
+          <i class="fa fa-clock">
+          </i>
+          Hourly Graph
+         </a>
+        </div>
+        <script>
+         function setCookie(cn,num) {
+                        var date = new Date();
+                        date.setTime(date.getTime() + 365*24*60*60*1000);
+                        expires = "expires="+ date.toUTCString();
+                        document.cookie = "pp"+cn + "=" + num + ";" + expires + "; path=/";
+                    }
+                    function getCookie(cn) {
+                        cname = 'pp'+cn+'=';
+                        decodedCookie = decodeURIComponent(document.cookie);
+                        ca = decodedCookie.split(';');
+                        for(var i = 0; i <ca.length; i++) {
+                            var c = ca[i];
+                            while (c.charAt(0) == ' ') {
+                                c = c.substring(1);
+                            }
+                            if (c.indexOf(cname) == 0) {
+                                return c.substring(cname.length, c.length);
+                            }
+                        }
+                        return "";
+                    }
+                    function checkCookie(cn) {
+                        rname = getCookie(cn);
+                        if(rname == '') {
+                            return true;
+                        }
+                        else {
+                            if(rname == 0) {
+                                return false;
+                            }
+                            else {
+                                return true;
+                            }
+                        }
+                    }
+                    var seriesOptions = [],seriesCounter = 0,names = ['ps','xb','pc'];
+                    function createChart() {
+                        Highcharts.setOptions({
+                          global: {
+                            useUTC: false,
+                          }
+                        });
+                        Highcharts.stockChart('daily', {
+                            chart: {
+                                backgroundColor: null,
+                                height:400
+                            },
+                            rangeSelector: {
+                                selected: 0,
+                                marginBottom:100,
+                                buttonTheme: {
+                                    fill: 'none',
+                                    stroke: 'none',
+                                    'stroke-width': 0,
+                                    r: 8,
+                                    style: {
+                                        color: '#fff',
+                                    },
+                                    states: {
+                                        hover: {
+                                            fill: '#363a3d',
+                                        },
+                                        select: {
+                                            fill: '#363a3d',
+                                            style: {
+                                                color: 'white'
+                                            }
+                                        }
+                                    }
+                                },
+                                inputStyle: {
+                                    color: '#999',
+                                },
+                            },
+                            title: {
+                                text: '',
+                                align: 'left',
+                                style: {
+                                    color: '#fff',
+                                }
+                            },
+                            yAxis: {
+                                gridLineWidth: 1,
+                                gridLineColor: '#373737',
+                                plotLines: [{
+                                    value: 0,
+                                    width: 1,
+                                    color: '#404447'
+                                }],
+                                labels: {
+                                    style: {
+                                        color: '#999'
+                                    }
+                                },
+                                offset : 30
+                            },
+                            legend: {
+                                enabled: true,
+                                itemStyle: {
+                                    color: '#999',
+                                }
+                            },
+                            xAxis: {
+                                tickWidth:0,
+                                lineWidth:0,
+                                labels: {
+                                    style: {
+                                        color: '#999'
+                                    }
+                                }
+                            },
+                            plotOptions: {
+                                series: {
+                                    events: {
+                                        legendItemClick: function (event) {
+                                            if(this.visible) { setCookie(this.name.toLowerCase(),0); } else { setCookie(this.name.toLowerCase(),1); }
+                                        },
+                                    },
+                                }
+                            },
+                            tooltip: {
+                                pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b><br/>',
+                                valueDecimals: 0,
+                                split: true
+                            },
+                            navigation: {
+                                bindings: {
+                                    rect: {
+                                        annotationsOptions: {
+                                            shapeOptions: {
+                                                fill: 'rgba(255, 255, 0, 0.8)'
+                                            }
+                                        }
+                                    }
+                                },
+                                annotationsOptions: {
+                                    typeOptions: {
+                                        line: {
+                                            stroke: 'rgba(255, 255, 0, 1)',
+                                            strokeWidth: 2
+                                        }
+                                    }
+                                }
+                            },
+                           credits: {
+                                text: ''
+                            },
+                            series: seriesOptions
+                        });
+                    }
+        </script>
+        <script>
+         ishloaded = 0;
+                    function loadHourly() {
+                        if(ishloaded == 0) {
+                            var seriesOptionsh = [],seriesCounterh = 0,namesh = ['ps','xb','pc'];
+                            function createChartH() {
+                                Highcharts.setOptions({
+                                  global: {
+                                    useUTC: false
+                                  }
+                                });
+                                Highcharts.stockChart('hourly', {
+                                    chart: {
+                                        backgroundColor: null,
+                                        height:400
+                                    },
+                                    rangeSelector: {
+                                        enabled: false
+                                    },
+                                    title: {
+                                        align: 'left',
+                                        style: {
+                                            color: '#fff',
+                                        }
+                                    },
+                                    exporting: {
+                                        enabled: false
+                                    },
+                                    navigator: {
+                                        enabled: false
+                                    },
+                                    yAxis: {
+                                        gridLineWidth: 0,
+                                        plotLines: [{
+                                            value: 0,
+                                            width: 2,
+                                            color: '#404447'
+                                        }],
+                                        offset : 30
+                                    },
+                                    legend: {
+                                        enabled: true,
+                                        itemStyle: {
+                                            color: '#999',
+                                        }
+                                    },
+                                    xAxis: {
+                                        tickWidth:0,
+                                        lineWidth:0,
+                                        labels: {
+                                            style: {
+                                                color: '#999'
+                                            }
+                                        }
+                                    },
+                                    plotOptions: {
+                                        series: {
+                                            events: {
+                                                legendItemClick: function (event) {
+                                                    if(this.visible) { setCookie(this.name.toLowerCase(),0); } else { setCookie(this.name.toLowerCase(),1); }
+                                                },
+                                            },
+                                        }
+                                    },
+                                    tooltip: {
+                                        pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b><br/>',
+                                        valueDecimals: 0,
+                                        split: true
+                                    },
+                                    navigation: {
+                                        bindings: {
+                                            rect: {
+                                                annotationsOptions: {
+                                                    shapeOptions: {
+                                                        fill: 'rgba(255, 255, 0, 0.8)'
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        annotationsOptions: {
+                                            typeOptions: {
+                                                line: {
+                                                    stroke: 'rgba(255, 255, 0, 1)',
+                                                    strokeWidth: 2
+                                                }
+                                            }
+                                        }
+                                    },
+                                   credits: {
+                                        text: 'FUTWIZ'
+                                    },
+                                    series: seriesOptionsh
+                                });
+                            }
+                            $.getJSON('https://www.futwiz.com/en/app/price_history_player23_multi?p=17392&h',function (data) {
+                                i=0;
+                                $.each(data,function(k,v) {
+                                    if(k == 'console') { k = 'Console';lc='#66fbf9'; }
+                                    else if(k == 'pc') { k = 'PC';lc='#ff9900'; }
+                                    seriesOptionsh[i] = {
+                                        name: k,
+                                        data: v,
+                                        color: lc,
+                                        type: 'spline',
+                                        visible: checkCookie(k.toLowerCase())
+                                    };
+                                    i++;
+                                });
+                                createChartH();
+                            });
+                            ishloaded = 1;
+                        }
+                    }
+        </script>
+        <div id="daily" style="height:auto;min-width:310px;position:relative;">
+        </div>
+        <div id="hourly" style="height:auto;min-width:310px;display:none;">
+        </div>
+        <link href="https://code.highcharts.com/css/annotations/popup.css" rel="stylesheet" type="text/css"/>
+        <script src="/assets/js/charts/highstock.js?r">
+        </script>
+        <script src="/assets/js/charts/annotations-advanced.js">
+        </script>
+        <script src="/assets/js/charts/full-screen.js">
+        </script>
+       </div>
+      </div>
+      <div class="player-stats-area-info">
+       <div class="desktopcembuttons">
+        <div class="text-center" style="color:#ccc;">
+         <b>
+          Choose Player Chemistry
+         </b>
+        </div>
+        <div class="chem-buttons">
+         <a class="chem0" data-chem="chem0" href="Javascript:;">
+          <div class="chem-diamonds">
+           <i class="fa fa-diamond">
+           </i>
+           <i class="fa fa-diamond">
+           </i>
+           <i class="fa fa-diamond">
+           </i>
+          </div>
+         </a>
+         <a class="chem1" data-chem="chem1" href="Javascript:;">
+          <div class="chem-diamonds">
+           <i class="fa fa-diamond activediamond">
+           </i>
+           <i class="fa fa-diamond">
+           </i>
+           <i class="fa fa-diamond">
+           </i>
+          </div>
+         </a>
+         <a class="chem2" data-chem="chem2" href="Javascript:;">
+          <div class="chem-diamonds">
+           <i class="fa fa-diamond activediamond">
+           </i>
+           <i class="fa fa-diamond activediamond">
+           </i>
+           <i class="fa fa-diamond">
+           </i>
+          </div>
+         </a>
+         <a class="chem3 active" data-chem="chem3" href="Javascript:;">
+          <div class="chem-diamonds">
+           <i class="fa fa-diamond activediamond">
+           </i>
+           <i class="fa fa-diamond activediamond">
+           </i>
+           <i class="fa fa-diamond activediamond">
+           </i>
+          </div>
+         </a>
+        </div>
+       </div>
+       <div class="desktopcembuttons" style="margin-top: 20px;">
+        <div class="chem-select">
+         <div style="width: 100%;">
+          <b>
+           Special Chemistry Styles
+          </b>
+         </div>
+         <a class="chembasic" href="Javascript:;" onclick="activestyle = 'basic';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+          <i class="chemicon-basic">
+          </i>
+          Basic
+         </a>
+         <a class="chemhunter" href="Javascript:;" onclick="activestyle = 'hunter';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+          <i class="chemicon-hunter">
+          </i>
+          Hunter
+         </a>
+         <a class="chemcatalyst" href="Javascript:;" onclick="activestyle = 'catalyst';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+          <i class="chemicon-catalyst">
+          </i>
+          Catalyst
+         </a>
+         <a class="chemshadow" href="Javascript:;" onclick="activestyle = 'shadow';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+          <i class="chemicon-shadow">
+          </i>
+          Shadow
+         </a>
+         <div style="width: 100%;">
+          <b>
+           Attacking Chemistry Styles
+          </b>
+         </div>
+         <a class="chemsniper" href="Javascript:;" onclick="activestyle = 'sniper';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+          <i class="chemicon-sniper">
+          </i>
+          Sniper
+         </a>
+         <a class="chemfinisher" href="Javascript:;" onclick="activestyle = 'finisher';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+          <i class="chemicon-finisher">
+          </i>
+          Finisher
+         </a>
+         <a class="chemdeadeye" href="Javascript:;" onclick="activestyle = 'deadeye';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+          <i class="chemicon-deadeye">
+          </i>
+          Deadeye
+         </a>
+         <a class="chemmarksman" href="Javascript:;" onclick="activestyle = 'marksman';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+          <i class="chemicon-marksman">
+          </i>
+          Marksman
+         </a>
+         <a class="chemhawk" href="Javascript:;" onclick="activestyle = 'hawk';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+          <i class="chemicon-hawk">
+          </i>
+          Hawk
+         </a>
+         <div style="width: 100%;">
+          <b>
+           Midfield Chemistry Styles
+          </b>
+         </div>
+         <a class="chemartist" href="Javascript:;" onclick="activestyle = 'artist';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+          <i class="chemicon-artist">
+          </i>
+          Artist
+         </a>
+         <a class="chemarchitect" href="Javascript:;" onclick="activestyle = 'architect';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+          <i class="chemicon-architect">
+          </i>
+          Architect
+         </a>
+         <a class="chempowerhouse" href="Javascript:;" onclick="activestyle = 'powerhouse';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+          <i class="chemicon-powerhouse">
+          </i>
+          Powerhouse
+         </a>
+         <a class="chemmaestro" href="Javascript:;" onclick="activestyle = 'maestro';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+          <i class="chemicon-maestro">
+          </i>
+          Maestro
+         </a>
+         <a class="chemengine" href="Javascript:;" onclick="activestyle = 'engine';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+          <i class="chemicon-engine">
+          </i>
+          Engine
+         </a>
+         <div style="width: 100%;">
+          <b>
+           Defending Chemistry Styles
+          </b>
+         </div>
+         <a class="chemsentinel" href="Javascript:;" onclick="activestyle = 'sentinel';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+          <i class="chemicon-sentinel">
+          </i>
+          Sentinel
+         </a>
+         <a class="chemguardian" href="Javascript:;" onclick="activestyle = 'guardian';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+          <i class="chemicon-guardian">
+          </i>
+          Guardian
+         </a>
+         <a class="chemgladiator" href="Javascript:;" onclick="activestyle = 'gladiator';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+          <i class="chemicon-gladiator">
+          </i>
+          Gladiator
+         </a>
+         <a class="chembackbone" href="Javascript:;" onclick="activestyle = 'backbone';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+          <i class="chemicon-backbone">
+          </i>
+          Backbone
+         </a>
+         <a class="chemanchor" href="Javascript:;" onclick="activestyle = 'anchor';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+          <i class="chemicon-anchor">
+          </i>
+          Anchor
+         </a>
+        </div>
+       </div>
+       <div class="mt-10 altpos-pitch" style="background: url(/assets/img/site/chem-pitch.jpg?v);width:280px;height: 343px;background-size: 280px;margin-left: auto;margin-right: auto;">
+        <div class="altpos-pos poscb">
+         <div class="altpos-inner-l1" style="color:medium">
+          57
+         </div>
+         <div class="altpos-inner-l2">
+          CB
+         </div>
+        </div>
+        <div class="altpos-pos poscdm">
+         <div class="altpos-inner-l1" style="color:high">
+          71
+         </div>
+         <div class="altpos-inner-l2">
+          CDM
+         </div>
+        </div>
+        <div class="altpos-pos poscm">
+         <div class="altpos-inner-l1" style="color:highest">
+          93
+         </div>
+         <div class="altpos-inner-l2">
+          CM
+         </div>
+        </div>
+        <div class="altpos-pos poscam">
+         <div class="altpos-inner-l1" style="color:highest">
+          94
+         </div>
+         <div class="altpos-inner-l2">
+          CAM
+         </div>
+        </div>
+        <div class="altpos-pos poscf">
+         <div class="altpos-inner-l1" style="color:highest">
+          94
+         </div>
+         <div class="altpos-inner-l2">
+          CF
+         </div>
+        </div>
+        <div class="altpos-pos posst">
+         <div class="altpos-inner-l1" style="color:highest">
+          94
+         </div>
+         <div class="altpos-inner-l2">
+          ST
+         </div>
+        </div>
+        <div class="altpos-pos poslw">
+         <div class="altpos-inner-l1" style="color:highest">
+          94
+         </div>
+         <div class="altpos-inner-l2">
+          LW
+         </div>
+        </div>
+        <div class="altpos-pos posrw">
+         <div class="altpos-inner-l1" style="color:highest">
+          94
+         </div>
+         <div class="altpos-inner-l2">
+          RW
+         </div>
+        </div>
+        <div class="altpos-pos poslm">
+         <div class="altpos-inner-l1" style="color:highest">
+          94
+         </div>
+         <div class="altpos-inner-l2">
+          LM
+         </div>
+        </div>
+        <div class="altpos-pos posrm">
+         <div class="altpos-inner-l1" style="color:highest">
+          94
+         </div>
+         <div class="altpos-inner-l2">
+          RM
+         </div>
+        </div>
+        <div class="altpos-pos posrb">
+         <div class="altpos-inner-l1" style="color:medium">
+          67
+         </div>
+         <div class="altpos-inner-l2">
+          RB
+         </div>
+        </div>
+        <div class="altpos-pos posrwb">
+         <div class="altpos-inner-l1" style="color:high">
+          72
+         </div>
+         <div class="altpos-inner-l2">
+          RWB
+         </div>
+        </div>
+        <div class="altpos-pos poslb">
+         <div class="altpos-inner-l1" style="color:medium">
+          67
+         </div>
+         <div class="altpos-inner-l2">
+          LB
+         </div>
+        </div>
+        <div class="altpos-pos poslwb">
+         <div class="altpos-inner-l1" style="color:high">
+          72
+         </div>
+         <div class="altpos-inner-l2">
+          LWB
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="latest-sales-area">
+      <div class="auctions-area">
+       <div class="mob-auctions">
+        <div class="heading">
+         Active Auctions
+         <div class="console-swap-sales">
+          <a class="active console-sold" href="Javascript:;" onclick="soldPrices('console');">
+           Console
+          </a>
+          |
+          <a class="pc-sold" href="Javascript:;" onclick="soldPrices('pc');">
+           PC
+          </a>
+         </div>
+        </div>
+        <div class="sale-row-head">
+         <div class="sale-time-auc">
+          Ends
+         </div>
+         <div class="sale-price-auc">
+          Start
+         </div>
+         <div class="sale-price-bin-auc">
+          BIN
+         </div>
+        </div>
+        <div class="active-auctions">
+         <div class="loading-icon">
+          <i class="fas fa-spinner fa-pulse">
+          </i>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="sales-area">
+       <div class="mob-auctions">
+        <div class="heading">
+         Latest Sales
+         <div class="console-swap-sales">
+          <a class="active console-sold" href="Javascript:;" onclick="soldPrices('console');">
+           Console
+          </a>
+          |
+          <a class="pc-sold" href="Javascript:;" onclick="soldPrices('pc');">
+           PC
+          </a>
+         </div>
+        </div>
+        <div class="sale-row-head">
+         <div class="sale-time">
+          Ended
+         </div>
+         <div class="sale-price">
+          Start
+         </div>
+         <div class="sale-price-bin">
+          Final
+         </div>
+         <div class="sale-type">
+          Type
+         </div>
+        </div>
+        <div class="latest-sales">
+         <div class="loading-icon">
+          <i class="fas fa-spinner fa-pulse">
+          </i>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="avg-area">
+       <div class="avg-block">
+        <div class="avg-title">
+         Lowest Sale
+        </div>
+        <div class="avg-price">
+         <img alt="coins" src="/assets/img/fifa17/champions/coins.png" width="20"/>
+         <span class="lowestsale">
+          <div class="loading-icon">
+           <i class="fas fa-spinner fa-pulse">
+           </i>
+          </div>
+         </span>
+        </div>
+        <div class="lowesttime">
+        </div>
+       </div>
+       <div class="avg-block">
+        <div class="avg-title">
+         Average BIN
+        </div>
+        <div class="avg-price">
+         <img alt="coins" src="/assets/img/fifa17/champions/coins.png" width="20"/>
+         <span class="avgbin">
+          <div class="loading-icon">
+           <i class="fas fa-spinner fa-pulse">
+           </i>
+          </div>
+         </span>
+        </div>
+        <div class="lowesttime-count">
+         Last
+         <span class="countsales">
+         </span>
+         Sales
+        </div>
+       </div>
+       <div class="avg-block">
+        <div class="avg-title">
+         Average Auction
+        </div>
+        <div class="avg-price">
+         <img alt="coins" src="/assets/img/fifa17/champions/coins.png" width="20"/>
+         <span class="avgauction">
+          <div class="loading-icon">
+           <i class="fas fa-spinner fa-pulse">
+           </i>
+          </div>
+         </span>
+        </div>
+        <div class="lowesttime-count">
+         Last
+         <span class="countsales">
+         </span>
+         Sales
+        </div>
+       </div>
+      </div>
+     </div>
+     <div style="margin-top: 10px;color:#999;padding:10px;">
+      This item is
+      <b>
+       Lionel Messi
+      </b>
+      Champions League Live , a RW from Argentina, playing in Ligue 1 Uber Eats. Messi FIFA 23 is 35 years old and has 4* skills and 4* weakfoot, and is Left footed. Messi's price on the xbox market is 1,308,000 coins (6 min ago), playstation is 0 coins (Never ago) and pc is 2,000,000 coins (21 min ago). There are 2 other versions of Lionel Messi in FIFA 23, check them out using the navigation above.
+     </div>
+    </div>
+    <div class="chem-select-overlay">
+     <div class="chem-select-mob">
+      <div class="text-center" style="color:#ccc;">
+       <b>
+        Choose Player Chemistry
+       </b>
+      </div>
+      <div class="chem-buttons">
+       <a class="chem0" data-chem="chem0" href="Javascript:;">
+        <div class="chem-diamonds">
+         <i class="fa fa-diamond">
+         </i>
+         <i class="fa fa-diamond">
+         </i>
+         <i class="fa fa-diamond">
+         </i>
+        </div>
+       </a>
+       <a class="chem1 active" data-chem="chem1" href="Javascript:;">
+        <div class="chem-diamonds">
+         <i class="fa fa-diamond activediamond">
+         </i>
+         <i class="fa fa-diamond">
+         </i>
+         <i class="fa fa-diamond">
+         </i>
+        </div>
+       </a>
+       <a class="chem2" data-chem="chem2" href="Javascript:;">
+        <div class="chem-diamonds">
+         <i class="fa fa-diamond activediamond">
+         </i>
+         <i class="fa fa-diamond activediamond">
+         </i>
+         <i class="fa fa-diamond">
+         </i>
+        </div>
+       </a>
+       <a class="chem3" data-chem="chem3" href="Javascript:;">
+        <div class="chem-diamonds">
+         <i class="fa fa-diamond activediamond">
+         </i>
+         <i class="fa fa-diamond activediamond">
+         </i>
+         <i class="fa fa-diamond activediamond">
+         </i>
+        </div>
+       </a>
+      </div>
+      <div class="chem-select">
+       <div style="width: 100%;margin-top: 10px;">
+        <b>
+         Special Chemistry Styles
+        </b>
+       </div>
+       <a class="chembasic" href="Javascript:;" onclick="activestyle = 'basic';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+        <i class="chemicon-basic">
+        </i>
+        Basic
+       </a>
+       <a class="chemhunter" href="Javascript:;" onclick="activestyle = 'hunter';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+        <i class="chemicon-hunter">
+        </i>
+        Hunter
+       </a>
+       <a class="chemcatalyst" href="Javascript:;" onclick="activestyle = 'catalyst';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+        <i class="chemicon-catalyst">
+        </i>
+        Catalyst
+       </a>
+       <a class="chemshadow" href="Javascript:;" onclick="activestyle = 'shadow';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+        <i class="chemicon-shadow">
+        </i>
+        Shadow
+       </a>
+       <div style="width: 100%;margin-top: 10px;">
+        <b>
+         Attacking Chemistry Styles
+        </b>
+       </div>
+       <a class="chemsniper" href="Javascript:;" onclick="activestyle = 'sniper';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+        <i class="chemicon-sniper">
+        </i>
+        Sniper
+       </a>
+       <a class="chemfinisher" href="Javascript:;" onclick="activestyle = 'finisher';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+        <i class="chemicon-finisher">
+        </i>
+        Finisher
+       </a>
+       <a class="chemdeadeye" href="Javascript:;" onclick="activestyle = 'deadeye';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+        <i class="chemicon-deadeye">
+        </i>
+        Deadeye
+       </a>
+       <a class="chemmarksman" href="Javascript:;" onclick="activestyle = 'marksman';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+        <i class="chemicon-marksman">
+        </i>
+        Marksman
+       </a>
+       <a class="chemhawk" href="Javascript:;" onclick="activestyle = 'hawk';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+        <i class="chemicon-hawk">
+        </i>
+        Hawk
+       </a>
+       <div style="width: 100%;margin-top: 10px;">
+        <b>
+         Midfield Chemistry Styles
+        </b>
+       </div>
+       <a class="chemartist" href="Javascript:;" onclick="activestyle = 'artist';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+        <i class="chemicon-artist">
+        </i>
+        Artist
+       </a>
+       <a class="chemarchitect" href="Javascript:;" onclick="activestyle = 'architect';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+        <i class="chemicon-architect">
+        </i>
+        Architect
+       </a>
+       <a class="chempowerhouse" href="Javascript:;" onclick="activestyle = 'powerhouse';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+        <i class="chemicon-powerhouse">
+        </i>
+        Powerhouse
+       </a>
+       <a class="chemmaestro" href="Javascript:;" onclick="activestyle = 'maestro';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+        <i class="chemicon-maestro">
+        </i>
+        Maestro
+       </a>
+       <a class="chemengine" href="Javascript:;" onclick="activestyle = 'engine';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+        <i class="chemicon-engine">
+        </i>
+        Engine
+       </a>
+       <div style="width: 100%;margin-top: 10px;">
+        <b>
+         Defending Chemistry Styles
+        </b>
+       </div>
+       <a class="chemsentinel" href="Javascript:;" onclick="activestyle = 'sentinel';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+        <i class="chemicon-sentinel">
+        </i>
+        Sentinel
+       </a>
+       <a class="chemguardian" href="Javascript:;" onclick="activestyle = 'guardian';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+        <i class="chemicon-guardian">
+        </i>
+        Guardian
+       </a>
+       <a class="chemgladiator" href="Javascript:;" onclick="activestyle = 'gladiator';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+        <i class="chemicon-gladiator">
+        </i>
+        Gladiator
+       </a>
+       <a class="chembackbone" href="Javascript:;" onclick="activestyle = 'backbone';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+        <i class="chemicon-backbone">
+        </i>
+        Backbone
+       </a>
+       <a class="chemanchor" href="Javascript:;" onclick="activestyle = 'anchor';calculateStyle();$('.chem-select a').attr('class',$('.chem-select a').attr('class').replace(' active',''));$(this).attr('class',$(this).attr('class')+' active');">
+        <i class="chemicon-anchor">
+        </i>
+        Anchor
+       </a>
+      </div>
+      <div class="chem-select-footer">
+       <a href="Javascript:;" onclick="$('.bodyoverlay').remove();$('.chem-select-overlay').hide();">
+        <i class="fa fa-times">
+        </i>
+        Close
+       </a>
+      </div>
+     </div>
+    </div>
+    <style>
+     .bodyoverlay {
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+}
+.chem-select-overlay {
+    display: none;
+    z-index: 1001;
+    position: fixed;
+    top: 125px;
+    width: 100%;
+    justify-content: center;
+}
+.chem-select-mob {
+    background: #212121;
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+}
+.chem-select-mob .chem-select {
+    margin-top: 10px;
+    height: 325px;
+    overflow: auto;
+    padding-bottom: 10px;
+}
+.chem-select-footer a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+    </style>
+    <script>
+     function colorbar(num) {
+        if(num <= 50) {
+            return 'low';
+        }
+        else if(num <= 70) {
+            return 'medium';
+        }
+        else if(num <= 80) {
+            return 'high';
+        }
+        else {
+            return 'highest';
+        }
+    }
+    function colourPitch(num) {
+        if(num <= 50) {
+            return '#d77775';
+        }
+        else if(num <= 70) {
+            return '#daa800';
+        }
+        else if(num <= 80) {
+            return '#91cf20';
+        }
+        else {
+            return '#45b200';
+        }   
+    }
+    var pstats = {att1:85,att2:92,att3:94,att4:97,att5:37,att6:69,acceleration:91,agility:94,balance:98,jumping:74,reactions:95,sprintspeed:80,stamina:75,strength:73,aggression:48,positioning:96,tactaware:44,vision:98,ballcontrol:96,crossing:88,curve:97,dribbling:98,finishing:93,fkacc:97,headingacc:76,longpass:94,longshot:94,marking:22,penalties:78,shortpass:95,shotpower:89,slidetackle:26,standingtackle:38,volleys:91,composure:99};
+
+    statslabel = Array();
+    gkstatslabel = Array();
+    tmpstats = Array();
+    statslabel[0] = 'acceleration';
+    statslabel[1] = 'sprintspeed';
+    statslabel[2] = 'positioning';
+    statslabel[3] = 'finishing';
+    statslabel[4] = 'shotpower';
+    statslabel[5] = 'longshot';
+    statslabel[6] = 'volleys';
+    statslabel[7] = 'penalties';
+    statslabel[8] = 'vision';
+    statslabel[9] = 'crossing';
+    statslabel[10] = 'fkacc';
+    statslabel[11] = 'shortpass';
+    statslabel[12] = 'longpass';
+    statslabel[13] = 'curve';
+    statslabel[14] = 'agility';
+    statslabel[15] = 'balance';
+    statslabel[16] = 'reactions';
+    statslabel[17] = 'ballcontrol';
+    statslabel[18] = 'dribbling';
+    statslabel[19] = 'composure';
+    statslabel[20] = 'tactaware';
+    statslabel[21] = 'headingacc';
+    statslabel[22] = 'marking';
+    statslabel[23] = 'standingtackle';
+    statslabel[24] = 'slidetackle';
+    statslabel[25] = 'jumping';
+    statslabel[26] = 'stamina';
+    statslabel[27] = 'strength';
+    statslabel[28] = 'aggression';
+    gkstatslabel[0] = 'att1';
+    gkstatslabel[1] = 'att2';
+    gkstatslabel[2] = 'att3';
+    gkstatslabel[3] = 'att4';
+    gkstatslabel[4] = 'acceleration';
+    gkstatslabel[5] = 'sprintspeed';
+    gkstatslabel[6] = 'att6';
+    chemboosts = {
+        3:{
+            'basic':[0,4,4,0,4,0,4,4,4,0,0,4,4,4,4,0,0,4,4,0,0,0,4,4,4,4,0,4,0],
+            'sniper':[0,0,4,0,8,15,8,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,0,4,8],
+            'finisher':[0,0,8,15,4,0,8,4,0,0,0,0,0,0,8,4,0,0,15,0,0,0,0,0,0,0,0,0,0],
+            'deadeye':[0,0,8,8,15,4,0,4,8,0,0,15,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+            'marksman':[0,0,0,8,4,8,0,4,0,0,0,0,0,0,0,0,4,8,8,0,0,0,0,0,0,8,0,8,0],
+            'hawk':[4,4,4,4,8,8,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,4,8],
+            'artist':[0,0,0,0,0,0,0,0,8,8,4,0,15,4,15,0,4,0,8,0,0,0,0,0,0,0,0,0,0],
+            'architect':[0,0,0,0,0,0,0,0,8,0,4,15,4,8,0,0,0,0,0,0,0,0,0,0,0,8,0,15,4],
+            'powerhouse':[0,0,0,0,0,0,0,0,15,4,0,8,8,4,0,0,0,0,0,0,8,0,4,15,0,0,0,0,0],
+            'maestro':[0,0,0,0,8,8,4,0,4,0,8,4,8,0,0,0,8,0,8,0,0,0,0,0,0,0,0,0,0],
+            'engine':[4,4,0,0,0,0,0,0,4,8,0,4,4,8,4,8,0,0,8,0,0,0,0,0,0,0,0,0,0],
+            'sentinel':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,15,8,4,4,15,0,4,8],
+            'guardian':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,4,15,0,4,4,8,15,8,0,0,0,0],
+            'gladiator':[0,0,0,15,8,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,8,4,4,8,15,0,0,0,0],
+            'backbone':[0,0,0,0,0,0,0,0,8,0,0,0,8,0,0,0,0,0,0,0,8,0,4,8,4,8,0,4,8],
+            'anchor':[4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4,4,8,8,8,0,8,4],
+            'hunter':[8,8,4,8,4,0,15,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+            'catalyst':[8,8,0,0,0,0,0,0,0,15,8,4,8,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+            'shadow':[8,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,4,4,8,15,0,0,0,0],
+            'gkbasic':[4,4,4,4,4,4,4],
+            'wall':[15,4,8,0,0,0,0],
+            'shield':[0,0,8,15,0,3,0],
+            'cat':[0,0,0,8,4,0,15],
+            'glove':[8,15,0,0,0,0,4],
+        },
+        2:{
+            'basic':[0,2,2,0,2,0,2,2,2,0,0,2,2,2,2,0,0,2,2,0,0,0,2,2,2,2,0,2,0],
+            'sniper':[0,0,2,0,4,8,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,2,4],
+            'finisher':[0,0,4,8,2,0,4,2,0,0,0,0,0,0,4,2,0,0,8,0,0,0,0,0,0,0,0,0,0],
+            'deadeye':[0,0,4,4,8,2,0,2,4,0,0,8,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+            'marksman':[0,0,0,4,2,4,0,2,0,0,0,0,0,0,0,0,2,4,4,0,0,0,0,0,0,4,0,4,0],
+            'hawk':[2,2,2,2,2,4,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,2,4],
+            'artist':[0,0,0,0,0,0,0,0,4,4,2,0,8,2,8,0,2,0,4,0,0,0,0,0,0,0,0,0,0],
+            'architect':[0,0,0,0,0,0,0,0,4,0,2,8,2,4,0,0,0,0,0,0,0,0,0,0,0,4,0,8,2],
+            'powerhouse':[0,0,0,0,0,0,0,0,8,2,0,4,4,2,0,0,0,0,0,0,4,0,2,8,0,0,0,0,0],
+            'maestro':[0,0,0,0,4,4,2,0,2,0,4,2,4,0,0,0,4,0,4,0,0,0,0,0,0,0,0,0,0],
+            'engine':[2,2,0,0,0,0,0,0,2,4,0,2,2,4,2,4,0,0,4,0,0,0,0,0,0,0,0,0,0],
+            'sentinel':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,8,4,2,2,8,0,2,4],
+            'guardian':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,2,8,0,2,2,4,8,4,0,0,0,0],
+            'gladiator':[0,0,0,8,4,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,4,2,2,4,8,0,0,0,0],
+            'backbone':[0,0,0,0,0,0,0,0,4,0,0,0,4,0,0,0,0,0,0,0,4,0,2,4,2,4,0,2,4],
+            'anchor':[2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,4,4,4,0,4,2],
+            'hunter':[4,4,2,4,2,0,8,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+            'catalyst':[4,4,0,0,0,0,0,0,0,8,4,2,4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+            'shadow':[4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,2,2,4,8,0,0,0,0],
+            'gkbasic':[2,2,2,2,2,2,2],
+            'wall':[8,2,4,0,0,0,0],
+            'shield':[0,0,4,8,0,2,0],
+            'cat':[0,0,0,4,2,0,8],
+            'glove':[4,8,0,0,0,0,2],
+        },
+        1:{
+            'basic':[0,1,1,0,1,0,1,1,1,0,0,1,1,1,1,0,0,1,1,0,0,0,1,1,1,1,0,1,0],
+            'sniper':[0,0,1,0,2,3,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,1,2],
+            'finisher':[0,0,2,3,1,0,2,1,0,0,0,0,0,0,2,1,0,0,3,0,0,0,0,0,0,0,0,0,0],
+            'deadeye':[0,0,2,2,3,1,0,1,2,0,0,3,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+            'marksman':[0,0,0,2,1,2,0,1,0,0,0,0,0,0,0,0,1,2,2,0,0,0,0,0,0,2,0,2,0],
+            'hawk':[1,1,1,1,2,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,1,2],
+            'artist':[0,0,0,0,0,0,0,0,2,2,1,0,3,1,3,0,1,0,2,0,0,0,0,0,0,0,0,0,0],
+            'architect':[0,0,0,0,0,0,0,0,2,0,1,3,1,2,0,0,0,0,0,0,0,0,0,0,0,2,0,3,1],
+            'powerhouse':[0,0,0,0,0,0,0,0,3,1,0,2,2,1,0,0,0,0,0,0,2,0,1,3,0,0,0,0,0],
+            'maestro':[0,0,0,0,2,2,1,0,1,0,2,1,2,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,0],
+            'engine':[1,1,0,0,0,0,0,0,1,2,0,1,1,2,1,2,0,0,2,0,0,0,0,0,0,0,0,0,0],
+            'sentinel':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,3,2,1,1,3,0,1,2],
+            'guardian':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,1,3,0,1,1,2,3,2,0,0,0,0],
+            'gladiator':[0,0,0,3,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,1,2,3,0,0,0,0],
+            'backbone':[0,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,2,0,1,2,1,2,0,1,2],
+            'anchor':[1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,2,2,2,0,2,1],
+            'hunter':[2,2,1,2,1,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+            'catalyst':[2,2,0,0,0,0,0,0,0,3,2,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+            'shadow':[2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,1,2,3,0,0,0,0],
+            'gkbasic':[1,1,1,1,1,1,1],
+            'wall':[3,1,2,0,0,0,0],
+            'shield':[0,0,2,3,0,1,0],
+            'cat':[0,0,0,2,1,0,3],
+            'glove':[2,3,0,0,0,0,1],
+        }
+    }
+    let activestyle = '';
+    let chemnum = 3;
+    statslabel[28] = 'aggression';
+    $('.chem-buttons a').on('click',function() {
+        $('.chem0').attr('class','chem0');
+        $('.chem1').attr('class','chem1');
+        $('.chem2').attr('class','chem2');
+        $('.chem3').attr('class','chem3');
+        chemclass = $(this).attr('data-chem');
+        chemnum = parseInt($(this).attr('data-chem').replace('chem',''));
+        $('.'+chemclass).attr('class',chemclass+' active');
+        calculateStyle();
+    });
+
+    function roundNumber(number) {
+        return -Math.round(-number);
+    }
+    function calculateStyle() {
+        if(chemnum == 0) {
+            $('.card-23-chemstyleimg').html('');
+
+            $('.att1bar').html(pstats['att1']);
+            $('.att2bar').html(pstats['att2']);
+            $('.att3bar').html(pstats['att3']);
+            $('.att4bar').html(pstats['att4']);
+            $('.att5bar').html(pstats['att5']);
+            $('.att6bar').html(pstats['att6']);
+            $('.card-23-attnum1').html(pstats['att1']);
+            $('.card-23-attnum2').html(pstats['att2']);
+            $('.card-23-attnum3').html(pstats['att3']);
+            $('.card-23-attnum4').html(pstats['att4']);
+            $('.card-23-attnum5').html(pstats['att5']);
+            $('.card-23-attnum6').html(pstats['att6']);
+
+                        for(i=0;i<29;i++) {
+                label = statslabel[i];
+                orignum = pstats[label];
+                $('.'+label+'stat').html(orignum);
+                $('.'+label+'boost').html('');
+                $('.'+label+'bar').attr('style','width:'+orignum+'%').attr('class','individual-stat-bar-front '+colorbar(orignum)+'barcolour '+label+'bar');
+            }
+            
+            $('.poscb .altpos-inner-l1').html('57');
+            $('.poslb .altpos-inner-l1').html('67');
+            $('.posrb .altpos-inner-l1').html('67');
+            $('.poslwb .altpos-inner-l1').html('72');
+            $('.posrwb .altpos-inner-l1').html('72');
+            $('.poscdm .altpos-inner-l1').html('71');
+            $('.poscm .altpos-inner-l1').html('93');
+            $('.poslm .altpos-inner-l1').html('94');
+            $('.posrm .altpos-inner-l1').html('94');
+            $('.poscam .altpos-inner-l1').html('94');
+            $('.poslw .altpos-inner-l1').html('94');
+            $('.posrw .altpos-inner-l1').html('94');
+            $('.poscf .altpos-inner-l1').html('94');
+            $('.posst .altpos-inner-l1').html('94');
+        }
+        else {
+
+            chemstyle = activestyle;
+            if(chemstyle != '' && chemnum != -1) {
+                $('.card-23-chemstyleimg').html('<i class="chemicon-'+activestyle+'"></i>');
+
+                
+                for(i=0;i<29;i++) {
+                    label = statslabel[i];
+                    boost = chemboosts[chemnum][chemstyle][i];
+                    orignum = pstats[label];
+                    newnum = pstats[label]+boost;
+                    if(newnum > 99) { newnum = 99; }
+                    change = newnum-orignum;
+                    if(boost > 0) {
+                        $('.'+label+'stat').html(newnum);
+                        $('.'+label+'boost').html('+'+change);
+                        $('.'+label+'bar').attr('style','width:'+newnum+'%').attr('class','individual-stat-bar-front '+colorbar(newnum)+'barcolour '+label+'bar');
+                    }
+                    else {
+                        $('.'+label+'boost').html('');
+                        $('.'+label+'stat').html(orignum);
+                        $('.'+label+'bar').attr('style','width:'+orignum+'%').attr('class','individual-stat-bar-front '+colorbar(orignum)+'barcolour '+label+'bar');
+                    }
+                    tmpstats[label] = newnum;
+                }
+
+                att1 = roundNumber((tmpstats['acceleration']*0.45)+(tmpstats['sprintspeed']*0.55));
+                att2 = roundNumber((tmpstats['positioning']*0.05)+(tmpstats['finishing']*0.45)+(tmpstats['longshot']*0.20)+(tmpstats['penalties']*0.05)+(tmpstats['shotpower']*0.20)+(tmpstats['volleys']*0.05));
+                att3 = roundNumber((tmpstats['vision']*0.20)+(tmpstats['crossing']*0.20)+(tmpstats['curve']*0.05)+(tmpstats['fkacc']*0.05)+(tmpstats['longpass']*0.15)+(tmpstats['shortpass']*0.35));
+                att4 = roundNumber((tmpstats['agility']*0.10)+(tmpstats['balance']*0.05)+(tmpstats['ballcontrol']*0.30)+(tmpstats['dribbling']*0.50)+(tmpstats['reactions']*0.05));
+                att5 = roundNumber((tmpstats['tactaware']*0.20)+(tmpstats['headingacc']*0.10)+(tmpstats['marking']*0.30)+(tmpstats['slidetackle']*0.10)+(tmpstats['standingtackle']*0.30));
+                att6 = roundNumber((tmpstats['aggression']*0.20)+(tmpstats['jumping']*0.05)+(tmpstats['stamina']*0.25)+(tmpstats['strength']*0.50));
+                if(att1 > 99) { att1 = 99; }if(att1 < pstats['att1']) { att1 = pstats['att1']; }
+                if(att2 > 99) { att2 = 99; }if(att2 < pstats['att2']) { att2 = pstats['att2']; }
+                if(att3 > 99) { att3 = 99; }if(att3 < pstats['att3']) { att3 = pstats['att3']; }
+                if(att4 > 99) { att4 = 99; }if(att4 < pstats['att4']) { att4 = pstats['att4']; }
+                if(att5 > 99) { att5 = 99; }if(att5 < pstats['att5']) { att5 = pstats['att5']; }
+                if(att6 > 99) { att6 = 99; }if(att6 < pstats['att6']) { att6 = pstats['att6']; }
+
+                $('.att1bar').html(att1);
+                $('.att2bar').html(att2);
+                $('.att3bar').html(att3);
+                $('.att4bar').html(att4);
+                $('.att5bar').html(att5);
+                $('.att6bar').html(att6);
+
+                if(att1 != pstats['att1']) { $('.card-23-attnum1').html('<div style="position:absolute;top:9px;left:-30px;width:25px;text-align:right;font-size:12px;">+'+(att1-pstats['att1'])+'</div>'+att1); } else { $('.card-23-attnum1').html(pstats['att1']); }
+                if(att2 != pstats['att2']) { $('.card-23-attnum2').html('<div style="position:absolute;top:9px;left:-30px;width:25px;text-align:right;font-size:12px;">+'+(att2-pstats['att2'])+'</div>'+att2); } else { $('.card-23-attnum2').html(pstats['att2']); }
+                if(att3 != pstats['att3']) { $('.card-23-attnum3').html('<div style="position:absolute;top:9px;left:-30px;width:25px;text-align:right;font-size:12px;">+'+(att3-pstats['att3'])+'</div>'+att3); } else { $('.card-23-attnum3').html(pstats['att3']); }
+                if(att4 != pstats['att4']) { $('.card-23-attnum4').html('<div style="position:absolute;top:9px;left:-30px;width:25px;text-align:right;font-size:12px;">+'+(att4-pstats['att4'])+'</div>'+att4); } else { $('.card-23-attnum4').html(pstats['att4']); }
+                if(att5 != pstats['att5']) { $('.card-23-attnum5').html('<div style="position:absolute;top:9px;left:-30px;width:25px;text-align:right;font-size:12px;">+'+(att5-pstats['att5'])+'</div>'+att5); } else { $('.card-23-attnum5').html(pstats['att5']); }
+                if(att6 != pstats['att6']) { $('.card-23-attnum6').html('<div style="position:absolute;top:9px;left:-30px;width:25px;text-align:right;font-size:12px;">+'+(att6-pstats['att6'])+'</div>'+att6); } else { $('.card-23-attnum6').html(pstats['att6']); }
+
+                stovr = .18*tmpstats['finishing']+.13*tmpstats['positioning']+0.1*tmpstats['headingacc']+0.1*tmpstats['ballcontrol']+0.1*tmpstats['shotpower']+0.08*tmpstats['reactions']+0.07*tmpstats['dribbling']+0.05*tmpstats['sprintspeed']+0.05*tmpstats['strength']+0.05*tmpstats['shortpass']+0.04*tmpstats['acceleration']+0.03*tmpstats['longshot']+0.02*tmpstats['volleys'];
+                lfovr = .15*tmpstats['ballcontrol']+0.14*tmpstats['dribbling']+0.13*tmpstats['positioning']+0.11*tmpstats['finishing']+0.09*tmpstats['shortpass']+0.09*tmpstats['reactions']+0.08*tmpstats['vision']+0.05*tmpstats['sprintspeed']+0.05*tmpstats['shotpower']+0.05*tmpstats['acceleration']+0.04*tmpstats['longshot']+0.02*tmpstats['headingacc'];
+                lwovr = 0.16*tmpstats['dribbling']+0.14*tmpstats['ballcontrol']+0.1*tmpstats['finishing']+0.09*tmpstats['positioning']+0.09*tmpstats['crossing']+0.09*tmpstats['shortpass']+0.07*tmpstats['acceleration']+0.07*tmpstats['reactions']+0.06*tmpstats['sprintspeed']+0.06*tmpstats['vision']+0.04*tmpstats['longshot']+0.03*tmpstats['agility'];
+                camovr = 0.16*tmpstats['shortpass']+0.15*tmpstats['ballcontrol']+0.14*tmpstats['vision']+0.13*tmpstats['dribbling']+0.09*tmpstats['positioning']+0.07*tmpstats['reactions']+0.07*tmpstats['finishing']+0.05*tmpstats['longshot']+0.04*tmpstats['longpass']+0.04*tmpstats['acceleration']+0.03*tmpstats['sprintspeed']+0.03*tmpstats['agility'];
+                lmovr = 0.15*tmpstats['dribbling']+0.13*tmpstats['ballcontrol']+0.11*tmpstats['shortpass']+0.1*tmpstats['crossing']+0.08*tmpstats['positioning']+0.07*tmpstats['vision']+0.07*tmpstats['acceleration']+0.07*tmpstats['reactions']+0.06*tmpstats['finishing']+0.06*tmpstats['sprintspeed']+0.05*tmpstats['stamina']+0.05*tmpstats['longpass'];
+                cmovr = 0.17*tmpstats['shortpass']+0.14*tmpstats['ballcontrol']+0.13*tmpstats['longpass']+0.13*tmpstats['vision']+0.08*tmpstats['reactions']+0.07*tmpstats['dribbling']+0.06*tmpstats['stamina']+0.06*tmpstats['positioning']+0.05*tmpstats['tactaware']+0.05*tmpstats['standingtackle']+0.04*tmpstats['longshot']+0.02*tmpstats['finishing'];
+                cdmovr = 0.14*tmpstats['tactaware']+0.14*tmpstats['shortpass']+0.12*tmpstats['standingtackle']+0.1*tmpstats['longpass']+0.1*tmpstats['ballcontrol']+0.09*tmpstats['marking']+0.07*tmpstats['reactions']+0.06*tmpstats['stamina']+0.05*tmpstats['aggression']+0.05*tmpstats['slidetackle']+0.04*tmpstats['vision']+0.04*tmpstats['strength'];
+                lwbovr = 0.12*tmpstats['crossing']+0.12*tmpstats['tactaware']+0.11*tmpstats['slidetackle']+0.1*tmpstats['stamina']+0.1*tmpstats['shortpass']+0.08*tmpstats['ballcontrol']+0.08*tmpstats['reactions']+0.08*tmpstats['standingtackle']+0.07*tmpstats['marking']+0.06*tmpstats['sprintspeed']+0.04*tmpstats['acceleration']+0.04*tmpstats['dribbling'];
+                lbovr = 0.14*tmpstats['slidetackle']+0.12*tmpstats['tactaware']+0.11*tmpstats['standingtackle']+0.09*tmpstats['crossing']+0.08*tmpstats['stamina']+0.08*tmpstats['reactions']+0.08*tmpstats['marking']+0.07*tmpstats['sprintspeed']+0.07*tmpstats['shortpass']+0.07*tmpstats['ballcontrol']+0.05*tmpstats['acceleration']+0.04*tmpstats['headingacc'];
+                cbovr = 0.17*tmpstats['standingtackle']+0.14*tmpstats['marking']+0.13*tmpstats['tactaware']+0.10*tmpstats['strength']+0.10*tmpstats['headingacc']+0.10*tmpstats['slidetackle']+0.07*tmpstats['aggression']+0.05*tmpstats['reactions']+0.05*tmpstats['shortpass']+0.04*tmpstats['ballcontrol']+0.03*tmpstats['jumping']+0.02*tmpstats['sprintspeed'];
+
+                intrep = 5;
+                if(intrep == 3) {
+                    intrep = 1;
+                }
+                else if(intrep == 4) {
+                    intrep = 2;
+                }
+                else if(intrep == 5) {
+                    intrep = 3;
+                }
+                else {
+                    intrep = 0;
+                }
+
+                stovr = roundNumber(stovr+intrep);
+                lfovr = roundNumber(lfovr+intrep);
+                lwovr = roundNumber(lwovr+intrep);
+                camovr = roundNumber(camovr+intrep);
+                lmovr = roundNumber(lmovr+intrep);
+                cmovr = roundNumber(cmovr+intrep);
+                cdmovr = roundNumber(cdmovr+intrep);
+                lwbovr = roundNumber(lwbovr+intrep);
+                lbovr = roundNumber(lbovr+intrep);
+                cbovr = roundNumber(cbovr+intrep);
+
+                if(stovr > 99) { stovr = 99; }
+                if(lfovr > 99) { lfovr = 99; }
+                if(lwovr > 99) { lwovr = 99; }
+                if(camovr > 99) { camovr = 99; }
+                if(lmovr > 99) { lmovr = 99; }
+                if(cmovr > 99) { cmovr = 99; }
+                if(cdmovr > 99) { cdmovr = 99; }
+                if(lwbovr > 99) { lwbovr = 99; }
+                if(lbovr > 99) { lbovr = 99; }
+                if(cbovr > 99) { cbovr = 99; }
+
+                $('.poscb .altpos-inner-l1').html(cbovr).attr('style','color:'+colourPitch(cbovr));
+                $('.poslb .altpos-inner-l1').html(lbovr).attr('style','color:'+colourPitch(lbovr));
+                $('.posrb .altpos-inner-l1').html(lbovr).attr('style','color:'+colourPitch(lbovr));
+                $('.poslwb .altpos-inner-l1').html(lwbovr).attr('style','color:'+colourPitch(lwbovr));
+                $('.posrwb .altpos-inner-l1').html(lwbovr).attr('style','color:'+colourPitch(lwbovr));
+                $('.poscdm .altpos-inner-l1').html(cdmovr).attr('style','color:'+colourPitch(cdmovr));
+                $('.poscm .altpos-inner-l1').html(cmovr).attr('style','color:'+colourPitch(cmovr));
+                $('.poslm .altpos-inner-l1').html(lmovr).attr('style','color:'+colourPitch(lmovr));
+                $('.posrm .altpos-inner-l1').html(lmovr).attr('style','color:'+colourPitch(lmovr));
+                $('.poscam .altpos-inner-l1').html(camovr).attr('style','color:'+colourPitch(camovr));
+                $('.poslw .altpos-inner-l1').html(lwovr).attr('style','color:'+colourPitch(lwovr));
+                $('.posrw .altpos-inner-l1').html(lwovr).attr('style','color:'+colourPitch(lwovr));
+                $('.poscf .altpos-inner-l1').html(lfovr).attr('style','color:'+colourPitch(lfovr));
+                $('.posst .altpos-inner-l1').html(stovr).attr('style','color:'+colourPitch(stovr));
+
+                currentaccel = $('.accelerate-type').attr('data-acceltype');
+                if(tmpstats['agility'] >= 65 && (tmpstats['agility']-tmpstats['strength']) >= 15 && tmpstats['acceleration'] >= 74 && 169 <= 180) {
+                    $('.accelerate-type').html('Explosive');
+                    if(currentaccel != 'Explosive') { $('.accelerate-type').attr('style','color:#91cf20;'); } else { $('.accelerate-type').attr('style',''); }
+                }
+                else if(tmpstats['strength'] >= 65 && (tmpstats['strength']-tmpstats['agility']) >= 14 && tmpstats['acceleration'] >= 55 && 169 >= 174) {
+                    $('.accelerate-type').html('Lengthy');
+                    if(currentaccel != 'Lengthy') { $('.accelerate-type').attr('style','color:#91cf20;'); } else { $('.accelerate-type').attr('style',''); }
+                }
+                else {
+                    $('.accelerate-type').html('Controlled');
+                    if(currentaccel != 'Controlled') { $('.accelerate-type').attr('style','color:#91cf20;'); } else { $('.accelerate-type').attr('style',''); }
+                }
+
+                            }
+        }
+    }
+    var eletop = 0;
+    function soldPrices(swapto) {
+        if(swapto == 'console') {
+            $('.console-sold').attr('class','active console-sold');
+            $('.pc-sold').attr('class','pc-sold');
+        }
+        else {
+            $('.console-sold').attr('class','console-sold');
+            $('.pc-sold').attr('class','active pc-sold');   
+        }
+        $('.active-auctions').html('<div class="loading-icon"><i class="fas fa-spinner fa-pulse"></i></div>');
+        $('.latest-sales').html('<div class="loading-icon"><i class="fas fa-spinner fa-pulse"></i></div>');
+        $('.avgauction').html('<div class="loading-icon"><i class="fas fa-spinner fa-pulse"></i></div>');
+        $('.lowestsale').html('<div class="loading-icon"><i class="fas fa-spinner fa-pulse"></i></div>');
+        $('.avgbin').html('<div class="loading-icon"><i class="fas fa-spinner fa-pulse"></i></div>');
+
+
+        $.getJSON('/en/app/sold23/17392/'+swapto,function(d) {
+            $('.lowestsale').html(d.lowest.e_bid_price);
+            $('.lowesttime').html(d.lowest.time_expires);
+            $('.avgbin').html(d.avgbin);
+            $('.avgauction').html(d.avgauction);
+            $('.countsales').html(d.pricelist.length);
+            i=0;
+            if(d.pricelist.length < 1) {
+                $('.latest-sales').html('<div class="no-data">No Data Available</div>');
+            }
+            else {
+                $.each(d.pricelist,function(k,v) {
+                    if(i<=9) {
+                        if(v.status == 'BIN') {
+                            bidstatus = '<div class="sale-type"><i class="fa fa-tag"></i> B<span class="hidestatus">IN</span></div>';
+                        }
+                        else {
+                            bidstatus = '<div class="sale-type"><i class="fa fa-gavel"></i> A<span class="hidestatus">uction</span></div>';
+                        }
+                        $('.latest-sales').append(`
+                        <div class="sale-row">
+                            <div class="sale-time">`+v.time_expires+`</div>
+                            <div class="sale-price"><img src="/assets/img/fifa17/champions/coins.png" width="10" alt="coins"> `+v.s_bid_price_clean+`</div>
+                            <div class="sale-price-bin"><img src="/assets/img/fifa17/champions/coins.png" width="10"alt="coins"> `+v.e_bid_price_clean+`</div>
+                            `+bidstatus+`
+                        </div>`);
+                    }
+                    i++;
+                });
+            }
+            i=0;
+            if(d.activepricelist.length < 1) {
+                $('.active-auctions').html('<div class="no-data">No Data Available</div>');
+            }
+            else {
+                $.each(d.activepricelist,function(k,v) {
+                    if(i<=9) {
+                        $('.active-auctions').append(`
+                        <div class="sale-row">
+                            <div class="sale-time-auc">`+v.time_expires+`</div>
+                            <div class="sale-price-auc"><img src="/assets/img/fifa17/champions/coins.png" width="10" alt="coins"> `+v.s_bid_price_clean+`</div>
+                            <div class="sale-price-bin-auc"><img src="/assets/img/fifa17/champions/coins.png" width="10" alt="coins"> `+v.bin_clean+`</div>
+                        </div>`);
+                    }
+                    i++;
+                });
+            }
+            $('.loading-icon').remove();
+        });
+    }
+    $(document).ready(function() {
+        soldPrices('console');
+        var elementPosition = $('.player-prices').offset();
+        eletop = elementPosition.top + 120;
+
+        $.getJSON('https://www.futwiz.com/en/app/price_history_player23_multi?p=17392',function (data) {
+            i=0;
+            $.each(data,function(k,v) {
+                if(k == 'console') { k = 'Console';lc='#46ccf2'; }
+                else if(k == 'pc') { k = 'PC';lc='#ff9900'; }
+                seriesOptions[i] = {
+                    name: k,
+                    data: v,
+                    color: lc,
+                    type: 'spline',
+                    visible: checkCookie(k.toLowerCase())
+                };
+                i++;
+            });
+            createChart();
+        });
+    });
+    $(window).scroll(function() {
+        if($(window).scrollTop() > eletop){
+            $('.priceslockedtop').attr('style','display:flex;');
+        }
+        else {
+            $('.priceslockedtop').attr('style','display:none;');
+        }
+    });
+    $('.futversion').val('FUT 23');
+    </script>
+    <div style="background: #c5c5c5;padding-top:10px;">
+     <div id="nn_primis_player">
+     </div>
+    </div>
+    <div class="social">
+     <div class="span12 footerad">
+      <div class="ad-728-center">
+       <div class="ad" id="nn_lb2">
+       </div>
+      </div>
+     </div>
+     <ul>
+      <li>
+       <a href="https://www.facebook.com/futwiz" target="_blank">
+        <i class="fab fa-facebook">
+        </i>
+        Facebook
+       </a>
+      </li>
+      <li>
+       <a href="https://www.twitter.com/futwiz" target="_blank">
+        <i class="fab fa-twitter">
+        </i>
+        Twitter
+       </a>
+      </li>
+      <li>
+       <a href="https://www.youtube.com/officialfutwiz" target="_blank">
+        <i class="fab fa-youtube">
+        </i>
+        YouTube
+       </a>
+      </li>
+      <li>
+       <a href="https://www.instagram.com/futwizsite" target="_blank">
+        <i class="fab fa-instagram">
+        </i>
+        Instagram
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </main>
+  <footer>
+   <div class="wrap">
+    <div class="sponsors">
+     <div class="row" style="justify-content:center;">
+      <div class="col-3">
+       <a href="https://nordvpn.com/FUTWIZ" target="_blank">
+        <img alt="Nord VPN Logo" class="lazyload" data-src="/assets/img/site/sponsors/nord-vpn.png?r"/>
+       </a>
+       Team FUTWIZ Partner
+      </div>
+      <div class="col-3">
+       <a href="https://e.lga.to/FUTWIZ" target="_blank">
+        <img alt="Elgato Logo" class="lazyload" data-src="/assets/img/site/sponsors/elgato_sponsor.png"/>
+       </a>
+       Team FUTWIZ Partner
+      </div>
+     </div>
+    </div>
+    <div class="row">
+     <div class="col-3">
+      <a href="https://itunes.apple.com/gb/app/futwiz/id579253659?mt=8" target="_blank">
+       <img alt="iOS App" class="lazyload appIcon" data-src="/assets/img/site/icons/appStore.png"/>
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=air.com.FUTWIZFUT" target="_blank">
+       <img alt="Google Play App" class="lazyload appIcon" data-src="/assets/img/site/icons/googlePlay.png"/>
+      </a>
+     </div>
+     <div class="col-3">
+      <ul>
+       <li>
+        Quick Links
+       </li>
+       <li>
+        <a href="/en/fifa22/fut-draft">
+         FUT Draft Simulator
+        </a>
+       </li>
+       <li>
+        <a href="/en/fifa22/squad-builder">
+         Squad Builder
+        </a>
+       </li>
+       <li>
+        <a href="/en/fifa22/players">
+         Player Search
+        </a>
+       </li>
+       <li>
+        <a href="/en/fifa22/career-mode/players">
+         Career Mode Searches
+        </a>
+       </li>
+       <li>
+        <a href="/en/fut-champions">
+         FUT Champions Leaderboards
+        </a>
+       </li>
+       <li>
+        <a href="/en/packs/fifa22/raregold">
+         FIFA Packs
+        </a>
+       </li>
+       <li>
+        <a href="/en/pack-opener">
+         Pack Opener
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col-3">
+      <ul>
+       <li>
+        TOTW
+       </li>
+       <li>
+        <a href="/en/fifa23/totw/totw-8">
+         TOTW 8
+        </a>
+       </li>
+       <li>
+        <a href="/en/fifa23/totw/totw-7">
+         TOTW 7
+        </a>
+       </li>
+       <li>
+        <a href="/en/fifa23/totw/out-of-position-team-1">
+         Out of Position - Team 1
+        </a>
+       </li>
+       <li>
+        <a href="/en/fifa23/totw/totw-6">
+         TOTW 6
+        </a>
+       </li>
+       <li>
+        <a href="/en/fifa23/totw/rulebreakers-team-2">
+         Rulebreakers - Team 2
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col-3">
+      <p>
+       <small>
+        © 2022 Webeast Ltd
+       </small>
+      </p>
+      <p>
+       <small>
+        All player faces, club badges and league logos are property of EA Sports
+       </small>
+      </p>
+      <p>
+       <small>
+        <a href="/en/privacy">
+         Privacy Policy
+        </a>
+        |
+        <a href="/en/contact">
+         Contact
+        </a>
+        |
+        <a class="nn-cmp-show" href="#">
+         Manage Cookie Settings
+        </a>
+        <br/>
+        <br/>
+        <a href="https://www.pikawiz.com/" target="_blank">
+         Pokemon Trading Card Prices
+        </a>
+       </small>
+      </p>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-43269690-1', 'futwiz.com');
+ga('send', 'pageview');
+  </script>
+  <script src="/ads.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js">
+  </script>
+  <script>
+   if(document.getElementById('vVfeYcAZLOUh')){
+  vVfeYcAZLOUh='No';
+} else {
+  vVfeYcAZLOUh='Yes';
+}
+
+if(typeof ga !=='undefined'){
+  ga('send','event','Blocking Ads',vVfeYcAZLOUh,{'nonInteraction':1});
+} else if(typeof _gaq !=='undefined'){
+  _gaq.push(['_trackEvent','Blocking Ads',vVfeYcAZLOUh,undefined,undefined,true]);
+}
+
+var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'padding': 256,
+    'tolerance': 70
+});
+slideout.disableTouch();
+
+// Toggle button
+document.querySelector('.mob-bars').addEventListener('click', function() {
+    slideout.toggle();
+});
+
+$( document ).ready(function() {
+    $("#menu").removeAttr("style");
+});
+
+$('.showdesktop').on('click',function() {
+    localStorage.setItem('showdesktop','true');
+    slideout.toggle();
+    $('.switchtomoblink').show();
+    setDview();
+});
+$('.showmboilesite').on('click',function() {
+    localStorage.setItem('showdesktop','false');
+    $("meta[name=viewport]").attr('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0');
+    $('.switchtomoblink').hide();
+});
+
+function setDview() {
+    if(localStorage.showdesktop == 'true'){
+        $("meta[name=viewport]").attr('content', 'width=1440, initial-scale=1.0');
+        setTimeout(function() { $('.switchtomoblink').show(); },1000);
+    }
+    if(typeof localStorage.showdesktop === 'undefined') {
+        $('.switchtomoblink').hide();
+    }
+}
+setDview();
+  </script>
+  <script src="/assets/js/jquery-ui-1.9.2.custom.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+  </script>
+  <script>
+   new WOW().init();
+  </script>
+  <script>
+   function afterReveal( el ) { el.addEventListener('animationstart', function( event ) { $('.wow').each(function(){ $(this).css('opacity',1); }); }); } new WOW({ callback: afterReveal }).init()
+  </script>
+  <script src="/assets/js/futwiz-foot.js?8002">
+  </script>
+  <script>
+   var sitelanguage = 'en';
+  </script>
+  <script async="" src="/assets/js/lazysizes.min.js">
+  </script>
+  <script type="text/javascript">
+   window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d52dd270f3","applicationID":"295558491","transactionName":"YVZRMBZSWUZRUE1eDVgccgcQWlhbH3VQUQMEABwSDVZABwM=","queueTime":0,"applicationTime":111,"atts":"TRFSRl5ISkg=","errorBeacon":"bam.nr-data.net","agent":""}
+  </script>
+ </body>
+</html>

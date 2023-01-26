@@ -1,0 +1,459 @@
+1668206344784	geckodriver	INFO	Listening on 127.0.0.1:65070
+1668206345036	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "65071" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofilerD6e1S"
+1668206346358	Marionette	INFO	Marionette enabled
+1668206346395	Marionette	INFO	Listening on port 65083
+Read port: 65083
+WebDriver BiDi listening on ws://127.0.0.1:65071
+1668206347042	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofilerD6e1S/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:65071/devtools/browser/f2ba7f0c-f466-4788-9d85-491a6da3845e
+1668206366669	geckodriver	INFO	Listening on 127.0.0.1:65139
+1668206367197	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "65140" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofileWp2uZB"
+1668206368010	Marionette	INFO	Marionette enabled
+1668206368142	Marionette	INFO	Listening on port 65147
+Read port: 65147
+WebDriver BiDi listening on ws://127.0.0.1:65140
+1668206368698	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofileWp2uZB/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:65140/devtools/browser/6a2df5ce-2c27-4f73-acc5-49510391bafd
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+1668206379683	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668206381071	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668206388459	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668206388464	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 7143 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668206391035	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668206391039	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668206391042	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668206391682	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 6929 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: 7
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 7761 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 702 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668206407923	Marionette	INFO	Stopped listening on port 65147
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1628: Error: permitUnload is already running for this tab.
+JavaScript error: chrome://remote/content/marionette/driver.js, line 2838: uncaught exception: undefined
+1668206445228	geckodriver	INFO	Listening on 127.0.0.1:49315
+1668206445751	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "headless" "--remote-debugging-port" "49316" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofileNGlw50"
+1668206446917	Marionette	INFO	Marionette enabled
+1668206447020	Marionette	INFO	Listening on port 49324
+Read port: 49324
+WebDriver BiDi listening on ws://127.0.0.1:49316
+1668206447902	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofileNGlw50/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49316/devtools/browser/a7143e27-ff82-4120-a931-991688c88f99
+1668206450749	Marionette	INFO	Stopped listening on port 49324
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1668206457794	geckodriver	INFO	Listening on 127.0.0.1:49378
+1668206458318	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "headless" "--remote-debugging-port" "49379" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofileuWEGZG"
+1668206459036	Marionette	INFO	Marionette enabled
+1668206459089	Marionette	INFO	Listening on port 49386
+Read port: 49386
+WebDriver BiDi listening on ws://127.0.0.1:49379
+1668206459914	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofileuWEGZG/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49379/devtools/browser/e28dad29-e942-4671-9994-7f2c82661709
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+1668206467315	Marionette	INFO	Stopped listening on port 49386
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1668206519690	geckodriver	INFO	Listening on 127.0.0.1:49516
+1668206520221	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "49517" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofileRkFfrU"
+1668206521263	Marionette	INFO	Marionette enabled
+1668206521321	Marionette	INFO	Listening on port 49525
+Read port: 49525
+WebDriver BiDi listening on ws://127.0.0.1:49517
+1668206522239	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofileRkFfrU/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49517/devtools/browser/8a5944a1-5882-43d3-9c6c-826d7e157b8d
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+1668206533847	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668206533855	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668206535835	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 6179 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668206539899	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668206540183	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668206540198	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 3362 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 818 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668206555396	Marionette	INFO	Stopped listening on port 49525
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1668206584466	geckodriver	INFO	Listening on 127.0.0.1:50006
+1668206584987	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50007" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofileEB67e6"
+1668206586111	Marionette	INFO	Marionette enabled
+1668206586207	Marionette	INFO	Listening on port 50015
+Read port: 50015
+WebDriver BiDi listening on ws://127.0.0.1:50007
+1668206587088	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofileEB67e6/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50007/devtools/browser/76a7058e-4811-4094-a674-1d4a8e177c5c
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+1668206599041	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668206599798	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668206601278	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 4292 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668206608262	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 5858 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668206609042	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668206609051	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: https://www.futbin.com/23/sales/26384/antonio-rudiger?platform=ps, line 15: ReferenceError: AdobeAn is not defined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 2682 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668206632107	geckodriver	INFO	Listening on 127.0.0.1:50682
+1668206632630	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50683" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofilejSFGk0"
+1668206633685	Marionette	INFO	Marionette enabled
+1668206633740	Marionette	INFO	Listening on port 50690
+Read port: 50690
+WebDriver BiDi listening on ws://127.0.0.1:50683
+1668206634673	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofilejSFGk0/search.json.mozlz4", (void 0)))
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 6771 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+DevTools listening on ws://127.0.0.1:50683/devtools/browser/9709ae3a-4993-4da0-8d5f-110e4ecf2f3d
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 7252 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668206650324	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668206651610	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[GFX1-]: Managed to allocate after flush.
+1668206659129	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1668206664052	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: https://www.futbin.com/23/sales/26384/antonio-rudiger?platform=ps, line 22: ReferenceError: AdobeAn is not defined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 2696 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 7401 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 6199 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Managed to allocate after flush.
+JavaScript error: resource://devtools/client/jsonview/Sniffer.sys.mjs, line 53: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://devtools/client/jsonview/Sniffer.sys.mjs, line 53: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://devtools/client/jsonview/Sniffer.sys.mjs, line 53: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://devtools/client/jsonview/Sniffer.sys.mjs, line 53: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://devtools/client/jsonview/Sniffer.sys.mjs, line 53: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://devtools/client/jsonview/Sniffer.sys.mjs, line 53: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://devtools/client/jsonview/Sniffer.sys.mjs, line 53: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://devtools/client/jsonview/Sniffer.sys.mjs, line 53: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://devtools/client/jsonview/Sniffer.sys.mjs, line 53: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://devtools/client/jsonview/Sniffer.sys.mjs, line 53: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1668207078636	geckodriver	INFO	Listening on 127.0.0.1:51355
+1668207079160	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "51356" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofilewDZb54"
+1668207079761	Marionette	INFO	Marionette enabled
+1668207079840	Marionette	INFO	Listening on port 51363
+Read port: 51363
+WebDriver BiDi listening on ws://127.0.0.1:51356
+1668207080695	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofilewDZb54/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51356/devtools/browser/048cde70-2f56-4de7-aae4-11362dedffda
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 679 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668207091633	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668207093265	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: resource://devtools/client/jsonview/Sniffer.sys.mjs, line 53: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+1668207195036	geckodriver	INFO	Listening on 127.0.0.1:51744
+1668207195608	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "51745" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofilea5ikey"
+1668207196740	Marionette	INFO	Marionette enabled
+1668207196821	Marionette	INFO	Listening on port 51756
+Read port: 51756
+WebDriver BiDi listening on ws://127.0.0.1:51745
+1668207197475	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofilea5ikey/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51745/devtools/browser/d912bab7-9ed3-48ec-851f-42741fccd55e
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 3123 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668207249043	geckodriver	INFO	Listening on 127.0.0.1:51896
+1668207249579	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "51897" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofileBEpVkJ"
+1668207250936	Marionette	INFO	Marionette enabled
+1668207251052	Marionette	INFO	Listening on port 51904
+Read port: 51904
+Read port: 51904
+WebDriver BiDi listening on ws://127.0.0.1:51897
+1668207252450	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofileBEpVkJ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51897/devtools/browser/3659db2c-dc06-4acc-82b7-73f588538130
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 5144 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668207267117	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668207272399	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668207276173	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668207277534	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668207277559	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668207277787	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668207279521	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 7504 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 6797 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 4568 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 3087 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdn.prvk.io/prvk-live/video.min.js, line 19: TypeError: this.el_ is null
+JavaScript error: https://cdn.prvk.io/prvk-live/video.min.js, line 19: TypeError: this.el_ is null
+JavaScript error: https://cdn.prvk.io/prvk-live/video.min.js, line 19: TypeError: this.el_ is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1668207320289	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1668207323786	geckodriver	INFO	Listening on 127.0.0.1:52786
+1668207323890	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "52787" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofileB4hiYV"
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 2325 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668207325954	Marionette	INFO	Marionette enabled
+1668207326189	Marionette	INFO	Listening on port 52817
+Read port: 52817
+Read port: 52817
+Read port: 52817
+WebDriver BiDi listening on ws://127.0.0.1:52787
+Read port: 52817
+Read port: 52817
+1668207331297	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofileB4hiYV/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52787/devtools/browser/3e1c954a-9500-467d-bde4-0a1544fbebbc
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 1147 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668207803020	geckodriver	INFO	Listening on 127.0.0.1:53235
+1668207803562	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53236" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofilelDGo3X"
+1668207804880	Marionette	INFO	Marionette enabled
+1668207804985	Marionette	INFO	Listening on port 53244
+Read port: 53244
+WebDriver BiDi listening on ws://127.0.0.1:53236
+1668207805599	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofilelDGo3X/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53236/devtools/browser/ce63fe80-1c95-488e-befc-16c38acbf692
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 6237 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668207817427	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668207819028	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668207827400	geckodriver	INFO	Listening on 127.0.0.1:53669
+1668207827468	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53670" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofileseai46"
+1668207831568	Marionette	INFO	Marionette enabled
+1668207831720	Marionette	INFO	Listening on port 53732
+Read port: 53732
+Read port: 53732
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 7655 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Read port: 53732
+Read port: 53732
+WebDriver BiDi listening on ws://127.0.0.1:53670
+Read port: 53732
+Read port: 53732
+1668207838008	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofileseai46/search.json.mozlz4", (void 0)))
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1668207873534	geckodriver	INFO	Listening on 127.0.0.1:53847
+1668207874051	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53848" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofileVnju9e"
+1668207875046	Marionette	INFO	Marionette enabled
+1668207875105	Marionette	INFO	Listening on port 53855
+Read port: 53855
+WebDriver BiDi listening on ws://127.0.0.1:53848
+1668207875997	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofileVnju9e/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53848/devtools/browser/3f248fa8-d009-474e-89c3-39c6e55a6a8e
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+1668207887005	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668207887400	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 3096 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 7545 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 1285 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 4835 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://s0.2mdn.net/sadbundle/674100886234595985/index.html, line 142: TypeError: a.g is null
+JavaScript error: https://s0.2mdn.net/sadbundle/674100886234595985/index.html, line 157: TypeError: this.g is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 6283 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 4113 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 1009 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 2341 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668207973463	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668207973672	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1668207986508	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 3938 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 1475 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 4518 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668208016158	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+1668208016295	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 5411 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 3969 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.futbin.com/23/sales/26384/antonio-rudiger?platform=ps, line 15: ReferenceError: AdobeAn is not defined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 4544 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668208047409	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 1614 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668208050976	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 3170 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 4594 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 7188 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 6081 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668208114525	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 6558 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668208114818	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 51 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 6706 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 1000 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 6052 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668208211782	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 1021 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668208243951	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668208323299	geckodriver	INFO	Listening on 127.0.0.1:54975
+1668208323822	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "54976" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofile9Wdi6f"
+1668208325264	Marionette	INFO	Marionette enabled
+1668208325366	Marionette	INFO	Listening on port 54985
+Read port: 54985
+WebDriver BiDi listening on ws://127.0.0.1:54976
+1668208326227	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofile9Wdi6f/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54976/devtools/browser/729b7571-f545-4355-b756-e552921e4ba3
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 6767 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 1237 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 155 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript warning: https://www.futbin.com/23/sales/26384/antonio-rudiger?platform=ps line 1 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 6578 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+JavaScript error: https://pxdrop.lijit.com/a/t_.htm?ver=1.1065.527&cid=c026, line 1: SyntaxError: JSON.parse: expected ':' after property name in object at line 1 column 6 of the JSON data
+1668208424708	geckodriver	INFO	Listening on 127.0.0.1:55289
+1668208425226	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "55290" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofileGqsgyG"
+1668208426235	Marionette	INFO	Marionette enabled
+1668208426293	Marionette	INFO	Listening on port 55297
+Read port: 55297
+WebDriver BiDi listening on ws://127.0.0.1:55290
+1668208427198	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[Child 22459, MediaDecoderStateMachine #1] WARNING: Decoder=11aef0400 Decode error: NS_ERROR_DOM_MEDIA_CANCELED (0x806e000a) - RefPtr<MediaSourceTrackDemuxer::SeekPromise> mozilla::MediaSourceTrackDemuxer::DoSeek(const mozilla::media::TimeUnit &): manager is detached.: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:151
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofileGqsgyG/search.json.mozlz4", (void 0)))
+1668208431170	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668208431177	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+DevTools listening on ws://127.0.0.1:55290/devtools/browser/fc6f07dc-c033-4785-915e-f80df5081fb0
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1668208439858	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668208440272	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 5743 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://717786-tags.mmi360.net/mmi-zip.js?cust=gm&agency=amnet&type=js&plat=CM360&mode=mon&advid=3876772&siteid=5071708&cmpnid=28600518&pcmtid=346429803&crtvid=180321125&rndnum=2831066558&site=N8334.2382313DOUBLECLICKBIDMANAG&adid=540827111&aucid=ABAjH0i1vyF6lRnyLVkYbqVDIcRk&exch=6&sellid=75217489396 line 1 > eval line 1 > eval, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 3692 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://717786-tags.mmi360.net/mmi-zip.js?cust=gm&agency=amnet&type=js&plat=CM360&mode=mon&advid=3876772&siteid=5071708&cmpnid=28600518&pcmtid=346429803&crtvid=180135109&rndnum=3923369941&site=N8334.2382313DOUBLECLICKBIDMANAG&adid=540827111&aucid=ABAjH0iOJ9mW8cS9TaZqBtJPpwoV&exch=6&sellid=75217489396 line 1 > eval line 1 > eval, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 6833 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://717786-tags.mmi360.net/mmi-zip.js?cust=gm&agency=amnet&type=js&plat=CM360&mode=mon&advid=3876772&siteid=5071708&cmpnid=28600518&pcmtid=346429803&crtvid=180321128&rndnum=725535226&site=N8334.2382313DOUBLECLICKBIDMANAG&adid=540827111&aucid=ABAjH0jm4J6m5Qz2KxI8YbcqvUn8&exch=9&sellid=75217489396 line 1 > eval line 1 > eval, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 2608 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://717786-tags.mmi360.net/mmi-zip.js?cust=gm&agency=amnet&type=js&plat=CM360&mode=mon&advid=3876772&siteid=5071708&cmpnid=28600518&pcmtid=346429803&crtvid=180321128&rndnum=3165022203&site=N8334.2382313DOUBLECLICKBIDMANAG&adid=540827111&aucid=ABAjH0ihEfsvlDrXCRdWdpax1oJm&exch=6&sellid=75217489396 line 1 > eval line 1 > eval, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 7503 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/quantcastv2691176990399/moatad.js#moatClientLevel1=p-nAGqS29H2r52p&moatClientLevel2=871831&moatClientLevel3=871508&moatClientLevel4=2210657&uid=ARGj5QAWo-AeRPXlA12gvgcSub5RQqGrUEamt1YRouIDFqS-fMSWdw==, line 239: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 2833 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1668208665951	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 3776 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://717786-tags.mmi360.net/mmi-zip.js?cust=gm&agency=amnet&type=js&plat=CM360&mode=mon&advid=3876772&siteid=5071708&cmpnid=28600518&pcmtid=346429803&crtvid=180134449&rndnum=444959249&site=N8334.2382313DOUBLECLICKBIDMANAG&adid=540827111&aucid=ABAjH0hnGeMUlR-yfuELRlZExD-2&exch=6&sellid=75217489396 line 1 > eval line 1 > eval, line 22: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pix.adrta.com/cdnf.js?v=22.110, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 69 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 4015 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 3735 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 4859 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 5535 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 1345 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668208896898	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 2965 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 368 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: 7
+JavaScript error: javascript:void;, line 1: SyntaxError: expected expression, got ';'
+JavaScript warning: https://cdn.js7k.com/ix/talon-1.0.40.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668209036758	geckodriver	INFO	Listening on 127.0.0.1:56648
+1668209037274	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "56649" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofile8jX8rZ"
+1668209038359	Marionette	INFO	Marionette enabled
+1668209038425	Marionette	INFO	Listening on port 56657
+Read port: 56657
+WebDriver BiDi listening on ws://127.0.0.1:56649
+1668209039462	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/7g/jyhsmb794bq7_ngwkfpgy8l80000gn/T/rust_mozprofile8jX8rZ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56649/devtools/browser/777f9b8d-80c5-4a91-bd68-fc842a54f6b1
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+JavaScript warning: https://cdn.futbin.com/design/js/custom.min.js?v=112111122152625, line 2: unreachable code after return statement
+1668209070674	Marionette	INFO	Stopped listening on port 53855
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1668209071717	Marionette	INFO	Stopped listening on port 54985
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1668209074316	Marionette	INFO	Stopped listening on port 55297
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/shared/RemoteError.jsm, line 12: ScriptTimeoutError: Timed out after 30000 ms
+1668209132476	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1668209132483	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 3748 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/crossmediaadvdcm491634115592/moatad.js#moatClientLevel1=6221315&moatClientLevel2=26888534&moatClientLevel3=345475785&moatClientLevel4=180762458&moatClientSlicer1=3107402&zMoatG=ct=US&st=IL&city=13342&dma=124&zp=61820&bw=4&zMoatENV=%pENV!, line 241: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668209137467	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://z.moatads.com/crossmediaadvdcm491634115592/moatad.js#moatClientLevel1=6221315&moatClientLevel2=26888534&moatClientLevel3=345475785&moatClientLevel4=180762458&moatClientSlicer1=3107402&zMoatG=ct=US&st=IL&city=13342&dma=124&zp=61820&bw=4&zMoatENV=%pENV!, line 241: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 6586 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 6831 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668209167465	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+1668209167796	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript warning: https://z.moatads.com/tripleliftvideojs305296359897/moatvideo.js#_moatApi14597973, line 246: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 1227 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/crossmediaadvdcm491634115592/moatad.js#moatClientLevel1=6221315&moatClientLevel2=26888534&moatClientLevel3=345475785&moatClientLevel4=180762458&moatClientSlicer1=3107402&zMoatG=ct=US&st=IL&city=13342&dma=124&zp=61820&bw=4&zMoatENV=%pENV!, line 241: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 341 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 7046 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1668209201816	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 783 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 5328 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 6722 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 6336 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 4390 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 2325 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/M3JMhzk_3vTF8k0i77EsfxGITEmQ_9Y04x5PTEuqQvc.js line 2 > eval line 1442 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
